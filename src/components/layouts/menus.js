@@ -1,7 +1,7 @@
 const menus = [
     {
         id: 1,
-        tomenu: "#home",
+        tomenu: "#",
         namemenu: "หน้าแรก"
     },
     {
@@ -11,7 +11,7 @@ const menus = [
     },
     {
         id: 3,
-        tomenu: "#appoint",
+        tomenu: "#reserve",
         namemenu: "จองโต๊ะ"
     },
     {

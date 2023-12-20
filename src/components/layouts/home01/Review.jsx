@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
+import ReactPlayer from 'react-player/youtube';
 
 class Review extends Component {
     constructor(props){
@@ -10,10 +11,11 @@ class Review extends Component {
                     id: 1,
                     img: './assets/images/clients/test-1.jpg',
                     alt: 'images',
-                    quoteText: 'Very Effective!',
-                    text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                    name: 'John Doe',
-                    desigantion: 'Developer',
+                    quoteText: '"หมอเลือกใช้ AAppoint ในการจัดการตาราง คนไข้ทั้ง 5 สาขา หมอและพนักงานเค้าน์เตอร์ทำงานง่ายขึ้นมากเลยค่ะ"',
+                    text: '',
+                    name: 'ทพญ.กนกรัสม์ ฉันทแดนสุวรรณ',
+                    desigantion: 'เจ้าของคลินิกทันตกรรม',
+                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
                 },
                 {
                     id:2,
@@ -23,6 +25,8 @@ class Review extends Component {
                     text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                     name: 'John Doe2',
                     desigantion: 'Developer',
+                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
+
                 },
                 {
                     id: 3,
@@ -32,6 +36,8 @@ class Review extends Component {
                     text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                     name: 'John Doe3',
                     desigantion: 'Developer',
+                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
+
                 },
                 {
                     id:4,
@@ -41,6 +47,8 @@ class Review extends Component {
                     text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                     name: 'John Doe2',
                     desigantion: 'Developer',
+                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
+
                 },
             ]
         }
@@ -54,7 +62,7 @@ class Review extends Component {
             arrows: false,
             autoplay: true,
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding: '40px',
             responsive: [
@@ -89,8 +97,7 @@ class Review extends Component {
                 <div className="row justify-content-center">
                     <div className="col-xl-6 col-lg-8">
                         <div className="section-heading center-heading text-center mb-60">
-                            <h3 className="heading-title">Reviews from happy readers</h3>
-                            <p>This book is concerned with creating typography and is essential for professionals who regularly work for clients.</p>
+                            <h3 className="heading-title">รีวิวประสบการณ์ใช้งาน AAppoint จากผู้ใช้งานจริง</h3>
                         </div>
                     </div>
                 </div>
@@ -99,23 +106,12 @@ class Review extends Component {
             <div className="row justify-content-center">
                     <div className="col-lg-12">
                         <div className="testimonials-slides">
-                            <Slider {...settings} >
+                        <Slider {...settings} >
                             {
                                 this.state.testimonial.map((data) => (
                                     <div className="review-item" key={data.id}>
-                                        <div className="client-info">
-                                            <div className="rating">
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                            </div>
-                                            <h4>{data.quoteText}</h4>
-                                            <p>{data.text}</p>
-                                        </div>
 
-                                        <div className="client-desc d-flex align-items-center">
+                                    <div className="client-desc d-flex align-items-center">
                                             <div className="client-img">
                                                 <img src={data.img} alt={data.alt} className="img-fluid"/>
                                             </div>
@@ -124,6 +120,31 @@ class Review extends Component {
                                                 <span className="designation">{data.desigantion}</span>
                                             </div>
                                         </div>
+
+                                        
+                                        <div className="video-container">
+                                            <ReactPlayer
+                                                url={data.video} 
+                                                controls
+                                                width="50%"
+                                                height="300px"
+                                            />
+                                            </div>
+
+                                            <div className="client-info text-center">
+                                            {/* <div className="rating">
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                                <i className="fa fa-star"></i>
+                                            </div> */}
+                                            <h4>{data.quoteText}</h4>
+                                            <p>{data.text}</p>
+                                            
+                                        </div>
+
+                                        
                                     </div> 
                                 ))
                             }

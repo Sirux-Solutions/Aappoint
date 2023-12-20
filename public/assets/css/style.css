@@ -772,6 +772,24 @@ CTA Subscribe
 /* ====================
 Testimonial
 ======================*/
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Adjust as needed based on your layout */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%; /* Set a specific height for the container if needed */
+}
+
 .review-item {
   border-radius: 5px;
   padding: 37px;
