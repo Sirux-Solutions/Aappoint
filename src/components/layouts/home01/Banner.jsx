@@ -24,12 +24,12 @@ class Banner extends Component {
             <section className="banner pb-80">
                 <div className="container">
                     <div className="row align-items-center justify-content-between">
-                    <div className="col-lg-5">
+                    <div className="col-lg-6">
                         <div className="banner-img">
                                 <img src="assets/images/banner/banner.jpg" alt="" className="img-fluid"/>
                             </div>
                         </div>
-                        <div className="col-md-12 col-lg-6">
+                        <div className="col-md-12 col-lg-5">
                             <div className="banner-content ">
                                 {/* <span className="subheading"></span> */}
                                 <h1>AAppoint</h1>
@@ -42,8 +42,7 @@ class Banner extends Component {
                                 </ul>
                                 <Link to="#" className="btn btn-main">เปิดร้านค้ากับ AAppoint</Link>  
                             </div>
-                        </div>
-                        
+                        </div>  
                     </div> 
                 </div> 
             </section>
