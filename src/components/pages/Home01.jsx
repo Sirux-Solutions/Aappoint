@@ -9,11 +9,12 @@ class Home01 extends Component {
             <div className="counter-scroll bg-home1 has-one-page">       
                 <Header />       
                         <Banner />
+                        <Services />
+                        <About />
                         <Intro />
                         <About />
                         <Chapter />
                         <Features />
-                        <Services />
                         <Counter />
                         <Cta />
                         <Review />

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 class About extends Component {
     constructor(props){
@@ -8,21 +10,21 @@ class About extends Component {
             about: [
                 {
                     id: 1,
-                    icon: 'bi bi-badge2',
-                    title: '10+ award achieved',
-                    text: 'Debitis ab ipsum a autem sit ducimus voluptatem, quos. Consequatur non eum facilis, ex repellendus, vitae debitis.'
+                    icon: 'bi bi-phone',
+                    title: 'สะดวก',
+                    text: 'เพิ่มความสะดวกให้ลูกค้าจองง่ายมากยิ่งขึ้น'
                 },
                 {
                     id: 2,
-                    icon: 'bi bi-support',
-                    title: 'Read On Any Device',
-                    text: 'Debitis ab ipsum a autem sit ducimus voluptatem, quos. Consequatur non eum facilis, ex repellendus, vitae debitis.'
+                    icon: 'bi bi-clipboard-data',
+                    title: 'ได้ข้อมูล',
+                    text: 'ทางร้านจะได้ข้อมูลในการจองอย่างครบถ้วน เช่น ชื่อ, เบอร์โทร, วัน-เวลาที่จอง, จำนวนคนที่เข้ามา'
                 },
                 {
                     id: 3,
-                    icon: 'bi bi-rocket2',
-                    title: 'Marketing Goals',
-                    text: 'Debitis ab ipsum a autem sit ducimus voluptatem, quos. Consequatur non eum facilis, ex repellendus, vitae debitis. '
+                    icon: 'bi bi-envelope',
+                    title: 'การแจ้งเตือน',
+                    text: 'ลูกค้าจะได้รับการแจ้งเตือนล่วงหน้าผ่าน SMS และ E-mail '
                 }
             ]
         }
@@ -32,16 +34,21 @@ class About extends Component {
         <section className="about-section section-padding bg-grey" id="about">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-6">
+                <div className="col-lg-1 col-md-1">
+                </div>
+
+                    <div className="col-lg-4 col-md-4">
                         <div className="about-img">
-                            <img src="assets/images/banner/book.png" alt="" className="img-fluid"/>
+                            <img src="assets/images/banner/reserve.png" alt="" className="img-fluid"/>
                         </div>
                     </div>
+                    <div className="col-lg-1 col-md-1">
+                </div>
                     <div className="col-lg-6 col-md-6">
                         <div className="section-heading">
-                            <span className="subheading">50% discount on early purchase</span>
-                            <h3 className="heading-title">Everything in your hand using mobile or tablet</h3>
-                            <p>This lovely, well-written book is concerned with creating typography and is essential for professionals.</p>
+                            {/* <span className="subheading">AAppoint X Reserve with Google</span> */}
+                            <h3 className="heading-title">AAppoint X Reserve with Google.</h3>
+                            <p>เพิ่มปุ่ม จองโต๊ะ หรือ Reserve a Table บน Google และ Google Maps ดีอย่างไร? </p>
                         </div>
 
                         {
@@ -54,7 +61,7 @@ class About extends Component {
                             ))
                         }
                         
-                        <Link to="#" className="btn btn-main-2"><i className="fa fa-check me-2"></i>More About Support</Link> 
+                        <Link to="#" className="btn btn-main-2"><i className="fa fa-check me-2"></i>เรียนรู้เพิ่มเติม</Link> 
                     </div>
                 </div>
             </div>
