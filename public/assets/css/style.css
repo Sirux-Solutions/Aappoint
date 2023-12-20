@@ -1,10 +1,3 @@
-/*==================
-Author       : Pxelcode
-Template Name: BookHunt - Author Book landing Template
-Author URI : https://themeforest.net/user/pxelcode
-Description: boo, pxelcode,Dreambuzz,bookhunt,promotionn,creative,author,book,ebook,marketing,digital, agency, startup,onepage, clean, modern,business, company
-Version      : 1.0
-================================*/
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -162,8 +155,8 @@ BUTTONS STYLE
 
 .btn-main:hover {
   color: #fff;
-  border-color: #5454DC;
-  background: #5454DC;
+  border-color: #1FAFA1;
+  background: #1FAFA1;
 }
 
 .btn-main-2 {
@@ -513,7 +506,7 @@ Header TopBar
 
 .banner .banner-content ul li i {
   margin-right: 20px;
-  color: #5454DC;
+  color: #1FAFA1;
 }
 
 .banner .banner-content .btn {
