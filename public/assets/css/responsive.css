@@ -1,0 +1,129 @@
+@media (min-width: 1200px) {
+  .blog-item {
+    margin-bottom: 0px;
+  }
+  .feature-item {
+    margin-bottom: 0px;
+  }
+  .book-preview {
+    background: #413E65;
+    margin: 0px 150px;
+  }
+  .nav-item.dropdown .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    top: 120%;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+ 
+}
+
+
+@media (max-width: 1024px) {
+  .feature-style-2{
+    padding:40px 30px;
+  }
+  .heading-title {
+      font-size: 38px;
+  }
+}
+@media (max-width: 992px) {
+  .section-padding {
+    padding: 60px 0px;
+  }
+  .navbar {
+    padding: 10px 10px;
+  }
+  .navbar-nav .nav-link {
+    padding: 10px 0px;
+  }
+  .header-socials {
+    display: none;
+  }
+  .site-navigation {
+    padding: 5px 0px;
+  }
+  .section-heading {
+    margin-bottom: 30px;
+  }
+  .client-logo {
+    margin-bottom: 30px;
+  }
+  .navbar-toggler {
+    background: #fff;
+    border-radius: 0px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+
+  .navbar-collapse{
+      position: absolute;
+      background: #04122D;
+      left: 0px;
+      width: 88%;
+      top: 30px;
+      z-index: 999;
+      transform: translateY(61px);
+      margin: 0 auto;
+      right: 0px;
+  }
+
+  .navbar-nav .nav-link{
+    color: #fff;
+  }
+  .nav-item.dropdown .dropdown-menu{
+    margin-left: 20px;
+  }
+
+  .menu_fixed .navbar-collapse{
+    background:#fff;
+  }
+  .menu_fixed .navbar-nav .nav-link{
+    color: #222;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .banner .banner-content h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .header-contact li, .header-socials li {
+    float: none;
+    text-align: center;
+  }
+  .header-top {
+    padding: 10px 0px;
+  }
+  .header-right {
+    float: none !important;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .header-btn {
+    margin-left: 0px;
+  }
+  .header-contact li:last-child {
+    padding-left: 0px;
+  }
+  .section-heading h3 {
+    font-size: 32px;
+  }
+  .client-logo {
+    margin-bottom: 30px;
+  }
+
+  .navbar-collapse{
+    width: 100%;
+    top: 0px;
+}
+
+}
