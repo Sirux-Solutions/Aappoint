@@ -15,7 +15,7 @@ class Header extends Component {
                     <nav className="navbar navbar-expand-lg">
                         <div className="container">
                             <Link to="#" className="navbar-brand">
-                                <img src="assets/images/logo-dark.png" alt="Bookhunt" className="img-fluid"/>
+                                <img src="assets/images/logo-dark.png" alt="aappoint_logo" className="img-fluid"/>
                             </Link>
 
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,22 +25,7 @@ class Header extends Component {
                             <div className="collapse navbar-collapse" id="navbarMenu">
                                 
                                 <ul className="navbar-nav ms-auto">
-                                    <li className="nav-item dropdown">
-                                        <Link to="#" className="nav-link dropdown-toggle"  
-                                            id="navbar2" role="button" data-toggle="dropdown" aria-haspopup="true" 
-                                            aria-expanded="false">Home <i className="fa fa-angle-down"></i>
-                                        </Link>
-                                        <ul className="dropdown-menu" >
-                                            {
-                                                links.map((data,index) => (
-                                                    
-                                                    <Link className="dropdown-item" key={index} to={data.tolink} onClick={() => {window.location.href=data.tolink}}>
-                                                        {data.namelink}
-                                                    </Link>
-                                                ))
-                                            }
-                                        </ul>
-                                    </li>
+                                    
 
                                     {
                                         menus.map((menu) => (

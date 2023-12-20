@@ -1,33 +1,33 @@
 const menus = [
     {
         id: 1,
-        tomenu: "#about",
-        namemenu: "About"
+        tomenu: "#home",
+        namemenu: "หน้าแรก"
     },
     {
         id: 2,
-        tomenu: "#chapters",
-        namemenu: "chapters"
+        tomenu: "#services",
+        namemenu: "บริการของเรา"
     },
     {
         id: 3,
-        tomenu: "#testimonial",
-        namemenu: "testimonial"
+        tomenu: "#appoint",
+        namemenu: "จองโต๊ะ"
     },
     {
         id: 4,
-        tomenu: "#author",
-        namemenu: "author"
+        tomenu: "#news",
+        namemenu: "ข่าวสาร"
     },
     {
         id: 5,
         tomenu: "#pricing",
-        namemenu: "pricing"
+        namemenu: "ราคา"
     },
     {
         id: 6,
         tomenu: "#contact",
-        namemenu: "Contact"
+        namemenu: "ติดต่อเรา"
     },
 ];
 
