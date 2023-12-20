@@ -21,10 +21,10 @@ class Review extends Component {
                     id:2,
                     img: './assets/images/clients/test-2.jpg',
                     alt: 'images',
-                    quoteText: 'Very Effective!',
-                    text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                    name: 'John Doe2',
-                    desigantion: 'Developer',
+                    quoteText: '“ผมใช้ AAppoint ในการช่วยจัดการนัดหมายเรื่องต่อดอกเบี้ย ลูกค้ามาต่อดอกตรงเวลามากขึ้น ไม่ต้องโทรตามบ่อยครั้งเหมือนเมื่อก่อนแล้ว”',
+                    text: '',
+                    name: 'พัชรดนัย เชิงวิวัฒน์กิจ',
+                    desigantion: 'กรรมการผู้จัดการห้างทองเพชรี',
                     video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
 
                 },
@@ -32,24 +32,14 @@ class Review extends Component {
                     id: 3,
                     img: './assets/images/clients/test-3.jpg',
                     alt: 'images',
-                    quoteText: 'Very Effective!',
-                    text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                    name: 'John Doe3',
-                    desigantion: 'Developer',
+                    quoteText: '“เข้าร่วม Reserve with Goolge ของ AAppoint 80% ที่เข้ามาจองเป็นลูกค้าใหม่ ซึ่งเป็นชาวต่างชาติ”',
+                    text: '',
+                    name: 'K.Mike',
+                    desigantion: 'ผู้จัดการทั่วไปร้านอาหาร',
                     video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
 
                 },
-                {
-                    id:4,
-                    img: './assets/images/clients/test-2.jpg',
-                    alt: 'images',
-                    quoteText: 'Very Effective!',
-                    text: 'They are creative enough.Very much creative and powerful enough.Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-                    name: 'John Doe2',
-                    desigantion: 'Developer',
-                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
-
-                },
+                
             ]
         }
     }
