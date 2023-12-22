@@ -17,7 +17,6 @@ class Home01 extends Component {
                         <Features />
                         <Counter />
                         <Cta />
-                        <Review />
                         <Author />
                         <Pricing />
                         <Faq />
