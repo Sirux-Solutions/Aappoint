@@ -8,20 +8,20 @@ class FeatureLeft extends Component {
                 {
                     id: 1,
                     icon: 'fa fa-check',
-                    title: 'How to improve yourself',
-                    text: 'Well-written book is concerned with creating typography and is essential for professionals who regularly'
+                    title: 'คลินิกทันตกรรม',
+                    text: ''
                 },
                 {
                     id: 2,
                     icon: 'fa fa-check',
-                    title: 'Utilize time productively',
-                    text: 'Well-written book is concerned with creating typography and is essential for professionals who regularly'
+                    title: 'คลินิกรักษาสัตว์เลี้ยง',
+                    text: ''
                 },
                 {
                     id: 3,
                     icon: 'fa fa-check',
-                    title: 'How to think creatively',
-                    text: 'Well-written book is concerned with creating typography and is essential for professionals who regularly '
+                    title: 'คลินิกเวชกรรม ตกแต่งเสริมความงาม',
+                    text: ''
                 }
             ]
         }
@@ -37,8 +37,9 @@ class FeatureLeft extends Component {
                                 <i className={data.icon}></i>
                             </div>
                             <div className="topic-content">
-                                <h4>{data.title}</h4>
+                                <h4 className='pt-2'>{data.title}</h4>
                                 <p>{data.text}</p>
+
                             </div>
                         </div>
                     

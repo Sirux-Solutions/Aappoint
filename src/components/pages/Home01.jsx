@@ -13,7 +13,7 @@ class Home01 extends Component {
                         <Reserve />
                         <Review />
                         <Clients />
-                        <Chapter />
+                        {/* <Chapter /> */}
                         <Features />
                         <Counter />
                         <Cta />

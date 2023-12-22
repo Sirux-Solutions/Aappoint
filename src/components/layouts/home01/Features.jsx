@@ -9,19 +9,19 @@ class Features extends Component {
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <div className="section-heading center-heading text-center mb-60">
-                            <h3 className="heading-title text-white">Thing's you will learn</h3>
-                            <p className="text-white">This book is concerned with creating typography and is essential for professionals who regularly work for clients.</p>
+                            <h3 className="heading-title text-white">ธุรกิจใดบ้างที่สามารถใช้งาน AAppoint ได้ ?</h3>
+                            <p className="text-white">ธุรกิจบริการ ธุรกิจนัดหมาย การจองคิว คุณเหมาะกับเราที่สุด!</p>
                         </div>
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-lg-6">
+                    <div className="col-lg-12">
                         <FeatureLeft />
                     </div>
 
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <FeatureRight />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section> 
