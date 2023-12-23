@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import {Header, Banner, Clients, Chapter,  Reserve, Features, Services, Counter, News,
-    Cta,  Author, Review, Pricing, Faq,Contact,Footer} from '../layouts/home01/index';
+import {Header, Banner, Clients,  Reserve, Features, Services, News, Review, Pricing, Faq,Contact,Footer} from '../layouts/home01/index';
 
 class Home01 extends Component {
     render() {
@@ -13,12 +12,8 @@ class Home01 extends Component {
                         <Reserve />
                         <Review />
                         <Clients />
-                        {/* <Chapter /> */}
                         <Features />
-                        <Counter />
                         <News />
-                        <Cta />
-                        <Author />
                         <Pricing />
                         <Faq />
                         <Contact />

@@ -19,11 +19,11 @@ class Contact extends Component {
                         <div className="col-lg-6">
                             
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.558141068117!2d100.544423!3d13.7451805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29edb2d4fe647%3A0x8e3f5e2586334016!2sAlma%20Link%20Building!5e0!3m2!1sen!2sus!4v1703282941788!5m2!1sen!2sus" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <div className="footer-widget footer-contact mb-5 mb-lg-0">
+                            <div className="footer-widget footer-contact mb-5 mb-lg-0 pt-3">
                                         <ul className="list-unstyled">
-                                        <li><h5>สำนักงานอาคารอัลม่า ลิ้งค์</h5></li>
-                                        <li>เบอร์ : 0644255865</li>
-                                        <li>E-mail : info@aappoint.me</li>
+                                        <li><h6> ที่อยู่: สำนักงานอาคารอัลม่า ลิ้งค์</h6></li>
+                                        <li>เบอร์โทร : 0644255865</li>
+                                        <li>อีเมลล์ : info@aappoint.me</li>
                                         </ul>
                             </div>
 
