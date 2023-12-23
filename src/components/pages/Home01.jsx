@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Header, Banner, Clients, Chapter,  Reserve, Features, Services, Counter,
+import {Header, Banner, Clients, Chapter,  Reserve, Features, Services, Counter, News,
     Cta,  Author, Review, Pricing, Faq,Contact,Footer} from '../layouts/home01/index';
 
 class Home01 extends Component {
@@ -16,6 +16,7 @@ class Home01 extends Component {
                         {/* <Chapter /> */}
                         <Features />
                         <Counter />
+                        <News />
                         <Cta />
                         <Author />
                         <Pricing />
