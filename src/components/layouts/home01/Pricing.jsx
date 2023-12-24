@@ -90,7 +90,7 @@ class Pricing extends Component {
                                         </ul>
 
                                         <div className="pricing-footer">
-                                            <Link to="#" className="btn btn-main-2">Get it now</Link>
+                                            <Link to="#" className="btn btn-main-2">สมัครสมาชิก</Link>
                                         </div>
                                     </div>
                                 </div>

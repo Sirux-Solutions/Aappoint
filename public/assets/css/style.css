@@ -1215,6 +1215,43 @@ Blog Main
   display: inline-block;
 }
 
+
+/* Add these styles to your CSS */
+.header-search-form {
+  display: flex;
+  align-items: center;
+}
+
+.modern-search-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f4f4f4; /* Optional background color */
+  color: #333; /* Optional text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modern-search-input::placeholder {
+  color: #999; /* Optional placeholder text color */
+}
+
+.modern-search-button {
+  border: none;
+  outline: none;
+  background-color: #f4f4f4; /* Optional background color */
+  padding: 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modern-search-button:hover {
+  background-color: #ddd; /* Optional hover background color */
+}
+
+
 /*==================
 Blog PAge 
 ==================== */

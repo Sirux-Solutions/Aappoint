@@ -37,13 +37,14 @@ class Header extends Component {
                             </div>
 
                             <div className="header-right-info d-none d-lg-block">
-                                <ul className="header-socials">
-                                    <li><Link to="#"><i className="fab fa-facebook-f" aria-hidden="true" /></Link></li>
-                                    <li><Link to="#"><i className="fab fa-twitter" aria-hidden="true" /></Link></li>
-                                    <li><Link to="#"><i className="fab fa-linkedin" aria-hidden="true" /></Link></li>
-                                    <li><Link to="#"><i className="fab fa-pinterest" aria-hidden="true" /></Link></li>
-                                </ul>
-                            </div>
+    <form className="header-search-form">
+        <input type="text" placeholder="Search" className="modern-search-input" />
+        <button type="submit" className="modern-search-button">
+            <i className="fas fa-search" aria-hidden="true" />
+        </button>
+    </form>
+</div>
+
                         </div> 
                     </nav>
                 </div>
