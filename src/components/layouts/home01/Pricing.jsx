@@ -62,8 +62,7 @@ class Pricing extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-heading center-heading text-center mb-60">
-                                <h3 className="heading-title">Pricing and Plans</h3>
-                                <p>This book is concerned with creating typography and is essential for professionals who regularly work for clients.</p>
+                                <h3 className="heading-title">ราคาและแพ๊คเกจ</h3>
                             </div>
                         </div>
                     </div>
