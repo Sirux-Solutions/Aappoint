@@ -471,14 +471,44 @@ Header TopBar
 ================*/
 .banner {
   padding: 60px 0px;
-  background: #F8F8F8;
+  background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value for darkness */
+  background-image: url('../images/banner/background.JPG');
 }
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('public/assets/images/banner/background.JPG');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner h1,
+.banner ul,
+.banner a,
+.banner p {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner p{
+  font-size: 1.3em;
+}
+
 
 .banner .banner-content h1 {
   font-size: 60px;
   margin: 15px 0px 25px;
   line-height: 60px;
   letter-spacing: -1px;
+  color: #f0f0f0;
 }
 
 .banner .banner-content p {
