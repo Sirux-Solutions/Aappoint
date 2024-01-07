@@ -6,7 +6,7 @@ class Home01 extends Component {
     render() {
         return (
             <div className="counter-scroll bg-home1 has-one-page">       
-                <Header />       
+                {/* <Header />        */}
                         <Banner />
                         <Services />
                         <Reserve />

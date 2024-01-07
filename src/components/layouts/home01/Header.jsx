@@ -37,12 +37,12 @@ class Header extends Component {
                             </div>
 
                             <div className="header-right-info d-none d-lg-block">
-    <form className="header-search-form">
+    {/* <form className="header-search-form">
         <input type="text" placeholder="Search" className="modern-search-input" />
         <button type="submit" className="modern-search-button">
             <i className="fas fa-search" aria-hidden="true" />
         </button>
-    </form>
+    </form> */}
 </div>
 
                         </div> 

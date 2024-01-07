@@ -48,6 +48,11 @@ p {
 /*--------------------
  TYPOGRAPHY
 -----------------*/
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .h1,
 .h2,
 .h3,
@@ -358,9 +363,13 @@ Header TopBar
 /*-------------------
    MENU
 ----------------------*/
+
+.logo {
+  width: 10em;
+}
+
 .site-navigation {
-  border-bottom: 1px solid #eee;
-  padding: 12px 0px;
+  /* border-bottom: 1px solid #eee; */
 }
 
 .navbar {
@@ -370,12 +379,12 @@ Header TopBar
 .navbar-nav .nav-link {
   padding-left: 18px !important;
   padding-right: 18px !important;
-  padding-top: 20px;
+  padding-top: 0px !important;
   padding-bottom: 20px;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 16px;
-  color: #111;
+  color: #f0f0f0;
 }
 
 .navbar-nav .nav-link:hover {
@@ -470,9 +479,10 @@ Header TopBar
  BAnner
 ================*/
 .banner {
-  padding: 60px 0px;
+  padding: 30px 0px 0px 0px;
   background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value for darkness */
   background-image: url('../images/banner/background.JPG');
+  height: 100%;
 }
 
 .banner::before {
