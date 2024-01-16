@@ -7,13 +7,13 @@ const menus = [
     {
         id: 2,
         tomenu: "#services",
-        namemenu: "บริการของเรา"
+        namemenu: "ทำไมต้อง AAppoint"
     },
-    {
-        id: 3,
-        tomenu: "#reserve",
-        namemenu: "จองโต๊ะ"
-    },
+    // {
+    //     id: 3,
+    //     tomenu: "#reserve",
+    //     namemenu: "จองโต๊ะ"
+    // },
     {
         id: 4,
         tomenu: "#news",
@@ -29,6 +29,7 @@ const menus = [
         tomenu: "#contact",
         namemenu: "ติดต่อเรา"
     },
+    
 ];
 
 

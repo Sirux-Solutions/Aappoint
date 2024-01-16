@@ -48,6 +48,10 @@ class Banner extends Component {
                                             <li className="nav-item" key={menu.id}><HashLink to={menu.tomenu}  className="nav-link js-scroll-trigger">{menu.namemenu}</HashLink></li>
                                         ))
                                     }  
+
+                                    <li className='nav-item'>
+                                        <HashLink  className="nav-link js-scroll-trigger">เข้าสู่ระบบ</HashLink>
+                                    </li>                                    
                                     
                                 </ul>
                             </div>
