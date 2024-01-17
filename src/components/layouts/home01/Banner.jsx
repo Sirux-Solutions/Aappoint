@@ -25,6 +25,8 @@ class Banner extends Component {
     }
     render() {
         return (
+
+            <>
             <section className="banner">
             <header>
                 <div className="site-navigation " id="mainmenu-area">
@@ -99,6 +101,11 @@ class Banner extends Component {
                 </div> 
             </section>
 
+            <section className="image-section">
+                    <img className="img-fluid" src="assets/images/banner/banner2.jpg" />
+                </section>
+            
+            </>
         );
     }
 }
