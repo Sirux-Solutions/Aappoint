@@ -40,19 +40,19 @@ class Banner extends Component {
                                 <span className="fa fa-bars"></span>
                             </button>
 
-                            <div className="collapse navbar-collapse" id="navbarMenu">
+                            <div className="collapse navbar-collapse justify-content-between" id="navbarMenu">
                                 
-                                <ul className="navbar-nav ms-auto">
+                                <ul className="navbar-nav d-flex flex-fill">
                                     
 
                                     {
                                         menus.map((menu) => (
-                                            <li className="nav-item" key={menu.id}><HashLink to={menu.tomenu}  className="nav-link js-scroll-trigger">{menu.namemenu}</HashLink></li>
+                                            <li className="nav-item flex-fill" key={menu.id}><HashLink to={menu.tomenu}  className="nav-link js-scroll-trigger">{menu.namemenu}</HashLink></li>
                                         ))
                                     }  
 
-                                    <li className='nav-item'>
-                                        <HashLink  className="nav-link js-scroll-trigger">เข้าสู่ระบบ</HashLink>
+                                    <li className='nav-item mx-3'>
+                                        <HashLink  className="nav-link js-scroll-trigger auth-link-button">เข้าสู่ระบบ</HashLink>
                                     </li>                                    
                                     
                                 </ul>

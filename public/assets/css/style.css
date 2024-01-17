@@ -1974,6 +1974,24 @@ Footer Section
   color:#fff;
 }
 
+.auth-link-button {
+  display: inline-block;
+  padding: 10px 30px !important;
+  border: 2px solid #0E696C; /* Green border color */
+  border-radius: 15px; /* Adjust border-radius to create an oval shape */
+  background-color: #fff; /* White background color */
+  color: #0E696C /* Green text color */ !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover Styles (Optional) */
+.auth-link-button:hover {
+  background-color: #0E696C; /* Green background color on hover */
+  color: #fff; /* White text color on hover */
+}
 
 .dark-theme .header-socials a {
   border-color: rgba(255,255,255,0.01);
