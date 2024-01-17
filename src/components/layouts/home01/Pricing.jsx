@@ -9,47 +9,48 @@ class Pricing extends Component {
             pricing: [
                 {
                     id: 1,
-                    title: 'Free Version',
-                    price: '0',
-                    subtitle: 'Full Free Chapter',
-                    currency: '$',
-                    text: 'Get one chapter of pdf version for free busy subscribing',
-                    icon: 'fa fa-circle',
-                    list1: '1 Free Chapter',
-                    list2: 'PDF version',
-                    list3: 'Free Subscripion',
-                    list4: 'No hardcover',
+                    title: 'Beginner',
+                    price: '6,900/year',
+                    subtitle: '',
+                    currency: '',
+                    text: '',
+                    icon: 'fa fa-window-minimize',
+                    list1: 'ปุ่ม Reserve a table',
+                    list2: '1 สาขา',
+                    list3: '1 แอดมิน',
+                    list4: 'Free Booking',
+                    list5: 'รับแจ้งเตือนผ่านอีเมลล์',
                     
                 },
                 {
                     id: 2,
-                    title: 'eBook Version',
-                    price: '49.99',
-                    subtitle: 'One time purchase',
-                    currency: '$',
-                    text: 'Get one chapter of pdf version for free busy subscribing',
-
-                    icon: 'fa fa-circle',
-                    list1: 'Ebook Version',
-                    list2: 'Audio Book',
-                    list3: 'PDF version',
-                    list4: 'Free Subscripion',
+                    title: 'Beginner',
+                    price: '6,900/year',
+                    subtitle: '',
+                    currency: '',
+                    text: '',
+                    icon: 'fa fa-window-minimize',
+                    list1: 'ปุ่ม Reserve a table',
+                    list2: '1 สาขา',
+                    list3: '1 แอดมิน',
+                    list4: 'Free Booking',
+                    list5: 'รับแจ้งเตือนผ่านอีเมลล์',
                     
                 },
                 {
                     id: 3,
-                    title: 'Full Version',
-                    price: '79.99',
-                    subtitle: 'One time purchase',
-                    currency: '$',
-                    text: 'Get one chapter of pdf version for free busy subscribing',
-
-                    icon: 'fa fa-circle',
-                    list1: 'Ebook Version2',
-                    list2: 'Audio Book',
-                    list3: 'PDF version',
-                    list4: 'hardcover variation',
-                   
+                    title: 'Beginner',
+                    price: '6,900/year',
+                    subtitle: '',
+                    currency: '',
+                    text: '',
+                    icon: 'fa fa-window-minimize',
+                    list1: 'ปุ่ม Reserve a table',
+                    list2: '1 สาขา',
+                    list3: '1 แอดมิน',
+                    list4: 'Free Booking',
+                    list5: 'รับแจ้งเตือนผ่านอีเมลล์',
+                    
                 },
             ]
         }
@@ -87,6 +88,8 @@ class Pricing extends Component {
                                             <li><i className={data.icon}></i> {data.list2}</li>
                                             <li><i className={data.icon}></i> {data.list3}</li>
                                             <li><i className={data.icon}></i> {data.list4}</li>
+                                            <li><i className={data.icon}></i> {data.list5}</li>
+
                                         </ul>
 
                                         <div className="pricing-footer">
