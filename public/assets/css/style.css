@@ -968,7 +968,8 @@ Testimonial
 }
 
 .pricing-item .price h3 {
-  font-size: 60px;
+  padding-top: 30px;
+  font-size: 3em;
 }
 
 .pricing-item .price p {

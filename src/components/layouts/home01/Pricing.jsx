@@ -24,32 +24,32 @@ class Pricing extends Component {
                 },
                 {
                     id: 2,
-                    title: 'Beginner',
-                    price: '6,900/year',
+                    title: 'Intermediate',
+                    price: '14,400/year',
                     subtitle: '',
                     currency: '',
                     text: '',
                     icon: 'fa fa-window-minimize',
                     list1: 'ปุ่ม Reserve a table',
-                    list2: '1 สาขา',
-                    list3: '1 แอดมิน',
-                    list4: 'Free Booking',
-                    list5: 'รับแจ้งเตือนผ่านอีเมลล์',
+                    list2: 'SMS 1,000/เดือน',
+                    list3: 'Basic Dashboard(Monthly view)',
+                    list4: 'Deposite',
+                    list5: 'View Menu',
                     
                 },
                 {
                     id: 3,
-                    title: 'Beginner',
-                    price: '6,900/year',
+                    title: 'Advanced',
+                    price: '27,600/year',
                     subtitle: '',
                     currency: '',
                     text: '',
                     icon: 'fa fa-window-minimize',
                     list1: 'ปุ่ม Reserve a table',
-                    list2: '1 สาขา',
-                    list3: '1 แอดมิน',
-                    list4: 'Free Booking',
-                    list5: 'รับแจ้งเตือนผ่านอีเมลล์',
+                    list2: 'SMS ไม่จำกัด',
+                    list3: 'Advanced Dashboard',
+                    list4: 'เชื่อม Tripadvisor',
+                    list5: 'เชื่อม Michelin',
                     
                 },
             ]
@@ -74,7 +74,9 @@ class Pricing extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="pricing-item mb-4 mb-lg-0" key={data.id}>
                                         <div className="pricing-header">
-                                            <span>{data.title}</span>
+                                            {/* <span>{data.title}</span> */}
+                                            <Link to="#" className="btn btn-main-2">{data.title}</Link>
+
                                         </div>
                                         <div className="price">
                                             <h3>{data.currency}{data.price}</h3>
@@ -92,9 +94,9 @@ class Pricing extends Component {
 
                                         </ul>
 
-                                        <div className="pricing-footer">
+                                        {/* <div className="pricing-footer">
                                             <Link to="#" className="btn btn-main-2">สมัครสมาชิก</Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             
