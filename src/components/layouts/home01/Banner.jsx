@@ -103,8 +103,10 @@ class Banner extends Component {
 
             <section className="image-section">
                     <img className="img-fluid" src="assets/images/banner/banner2.jpg" />
-                </section>
-            
+            </section>
+            <section className="image-section">
+                    <img className="img-fluid" src="assets/images/banner/banner3.jpg" />
+            </section>
             </>
         );
     }
