@@ -342,9 +342,27 @@ Header TopBar
 .header-socials li {
   padding: 0px 5px;
   font-size: 12px;
+  
 }
 
-.header-socials li a {
+.header-socials img {
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+  color: #555;
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+
+.header-socials img a:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.header-socials li a  {
   color: #555;
   width: 40px;
   height: 40px;
@@ -354,6 +372,18 @@ Header TopBar
   border-radius: 100%;
   padding-top: 7px;
 }
+
+#a-tiktok  {
+  padding-top: 3px !important;
+  color: #555;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  display: inline-block;
+  border-radius: 100%;
+}
+
 
 .header-socials li a:hover {
   background: #333;

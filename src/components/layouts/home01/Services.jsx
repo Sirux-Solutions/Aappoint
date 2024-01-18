@@ -41,11 +41,15 @@ class Services extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section-heading center-heading text-center mb-60">
-                                <h3 className="heading-title">บริการของเรา</h3>
+                                <h3 className="heading-title">ทำไมต้อง AAppoint</h3>
                                 <p>บริการของเรา ช่วยจัดการตารางานนัดหมายของธุรกิจ เพื่อสร้างความประทับใจให้กับลูกค้าของคุณ</p>
                             </div>
                         </div>
                     </div>
+
+                    {/* in react, create a row with 4 columns lg-2 lg-4 lg4 lg-2 where lg2 are empty to create padding, and lg4 contains vertical image with button below it 
+
+ */}
                     <div className="row ">
                         {
                             this.state.features.map((data,index) => (
