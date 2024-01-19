@@ -396,7 +396,11 @@ Header TopBar
 ----------------------*/
 
 .logo {
-  width: 10em;
+  width: 15em;
+  padding-right: 30px !important;
+  padding-bottom: 10px !important;
+  align-items: center;
+  align-content: center !important;
 }
 
 .site-navigation {
@@ -408,18 +412,18 @@ Header TopBar
 }
 
 .navbar-nav .nav-link {
-  padding-left: 18px !important;
-  padding-right: 18px !important;
-  padding-top: 0px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  padding-top: 2px !important;
   padding-bottom: 20px;
   font-weight: 600;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 17px;
   color: #f0f0f0;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #0E696C;
+  color: #29BFA9;
 }
 
 .navbar-nav .nav-link i {
@@ -469,7 +473,7 @@ Header TopBar
 
 .nav-item.dropdown .dropdown-menu {
   transition: all 300ms ease;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.02);
   border: 0px;
   padding: 0px;
   position: absolute;
@@ -2007,20 +2011,21 @@ Footer Section
 .auth-link-button {
   display: inline-block;
   padding: 10px 30px !important;
-  border: 2px solid #0E696C; /* Green border color */
+  border: 2px solid #29BFA9; /* Green border color */
   border-radius: 15px; /* Adjust border-radius to create an oval shape */
   background-color: #fff; /* White background color */
-  color: #0E696C /* Green text color */ !important;
+  color: #29BFA9 /* Green text color */ !important;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 16px;
   cursor: pointer;
+  text-shadow: none !important;
 }
 
 /* Hover Styles (Optional) */
 .auth-link-button:hover {
-  background-color: #0E696C; /* Green background color on hover */
-  color: #fff; /* White text color on hover */
+  background-color: #29BFA9; /* Green background color on hover */
+  color: #ffffff !important; /* White text color on hover */
 }
 
 .dark-theme .header-socials a {
