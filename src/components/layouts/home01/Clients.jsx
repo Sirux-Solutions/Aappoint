@@ -17,9 +17,9 @@ class Clients extends Component {
                     </div>
                 </div>
 
-                <section className="cta-2 clients pb-20">
+                <section className="cta-2 clients pb-5">
                     <div className="container-fluid">
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center pb-5">
                             <div className="col-lg-3 col-sm-6">
                                 <div className="client-logo">
                                     <img src="assets/images/clients/logo1.JPG" alt="" className="img-fluid"/>
@@ -41,8 +41,8 @@ class Clients extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="row" >
-                            <div className="col-lg-3 col-sm-6 ">
+                        <div className="row d-flex justify-content-around" >
+                            <div className="col-lg-3 col-sm-6">
                                 <div className="client-logo">
                                     <img src="assets/images/clients/logo5.JPG" alt="" className="img-fluid"/>
                                 </div>
