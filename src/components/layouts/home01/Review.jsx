@@ -15,7 +15,7 @@ class Review extends Component {
                     text: '',
                     name: 'ทพญ.กนกรัสม์ ฉันทแดนสุวรรณ',
                     desigantion: 'เจ้าของคลินิกทันตกรรม',
-                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
+                    video: "https://streamable.com/e/e1i3xv?nocontrols=1",
                 },
                 {
                     id:2,
@@ -25,7 +25,7 @@ class Review extends Component {
                     text: '',
                     name: 'พัชรดนัย เชิงวิวัฒน์กิจ',
                     desigantion: 'กรรมการผู้จัดการห้างทองเพชรี',
-                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
+                    video: "https://streamable.com/e/z8ltdz?nocontrols=1",
 
                 },
                 {
@@ -36,7 +36,7 @@ class Review extends Component {
                     text: '',
                     name: 'K.Mike',
                     desigantion: 'ผู้จัดการทั่วไปร้านอาหาร',
-                    video: "https://www.youtube.com/watch?v=I0iptsRvTzM&list=RDI0iptsRvTzM",
+                    video: "https://streamable.com/e/v684c8?nocontrols=1",
 
                 },
                 
@@ -112,14 +112,7 @@ class Review extends Component {
                                         </div>
 
                                         
-                                        <div className="video-container">
-                                            <ReactPlayer
-                                                url={data.video} 
-                                                controls
-                                                width="50%"
-                                                height="300px"
-                                            />
-                                            </div>
+                                        <div className="video-container" ><iframe allow="fullscreen" allowfullscreen height="100%" src={data.video} width="100%"></iframe></div>
 
                                             <div className="client-info text-center">
                                             {/* <div className="rating">

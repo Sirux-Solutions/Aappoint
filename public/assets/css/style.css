@@ -539,7 +539,7 @@ Header TopBar
   position: relative;
   z-index: 2;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .banner p{
@@ -855,6 +855,7 @@ Testimonial
   padding-top: 20px;
   padding-bottom: 20px;
   height: 100%; /* Set a specific height for the container if needed */
+  width: 100%;
 }
 
 .review-item {
