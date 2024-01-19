@@ -405,11 +405,10 @@ Header TopBar
 
 .site-navigation {
   /* border-bottom: 1px solid #eee; */
+  padding-top: 4px;
 }
 
-.navbar {
-  padding: 0px;
-}
+
 
 .navbar-nav .nav-link {
   padding-left: 24px !important;

@@ -29,7 +29,7 @@ class Banner extends Component {
             <>
             <section className="banner">
             <header>
-                <div className="site-navigation " id="mainmenu-area">
+                <div className="site-navigation" id="mainmenu-area">
                     <nav className="navbar navbar-expand-lg">
                         <div className="container">
                             
@@ -38,7 +38,7 @@ class Banner extends Component {
                                 <span className="fa fa-bars"></span>
                             </button>
 
-                            <div className="collapse navbar-collapse justify-content-between" id="navbarMenu">
+                            <div className=" collapse navbar-collapse justify-content-between" id="navbarMenu">
                                 
                                 <ul className="navbar-nav d-flex flex-fill">
                                     <li className='logo nav-item mx-3'>
