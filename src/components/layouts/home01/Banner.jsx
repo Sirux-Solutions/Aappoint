@@ -32,8 +32,6 @@ class Banner extends Component {
                 <div className="site-navigation" id="mainmenu-area">
                     <nav className="navbar navbar-expand-lg">
                         <div className="container">
-                            
-
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="fa fa-bars"></span>
                             </button>
@@ -43,7 +41,7 @@ class Banner extends Component {
                                 <ul className="navbar-nav d-flex flex-fill">
                                     <li className='logo nav-item mx-3'>
                                     <Link to="#" className="navbar-brand">
-                                <img src="assets/images/logo-dark.png" alt="aappoint_logo" className="img-fluid logo"/>
+                                <img src="assets/images/logo-light.png" alt="aappoint_logo" className="img-fluid logo"/>
                             </Link>
                                     </li>
 

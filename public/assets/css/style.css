@@ -507,6 +507,7 @@ Header TopBar
 
 .header-white {
   background: #fff;
+  color: #000;
 }
 
 /* ================
@@ -514,7 +515,7 @@ Header TopBar
 ================*/
 .banner {
   padding: 30px 0px 0px 0px;
-  background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value for darkness */
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value for darkness */
   background-image: url('../images/banner/background.JPG');
   height: 100%;
 }
@@ -2005,7 +2006,7 @@ Footer Section
   border-color: rgba(255, 255, 255, 0.05);
 }
 .dark-theme .navbar-nav .nav-link{
-  color:#fff;
+  color:#000;
 }
 
 .auth-link-button {
