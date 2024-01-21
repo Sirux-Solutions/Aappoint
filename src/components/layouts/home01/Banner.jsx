@@ -25,7 +25,8 @@ class Banner extends Component {
     }
     render() {
         return (
-
+// Todo: Add Changing color functionality
+// To fix: Make sure responsive navbar work
             <>
             <section className="banner">
             <header>
@@ -106,6 +107,24 @@ class Banner extends Component {
             </section>
             <section className="image-section">
                     <img className="img-fluid" src="assets/images/banner/banner3.jpg" />
+            </section>
+            <section className="text-section pt-5">
+                    <div className='container'>
+                        <div className='row justify-content-center'>
+                            <div className='col-6 text-center'>
+                                <h3>AAppoint แพลตฟอร์มอันดับ 1 ของคนไทย</h3>
+                                <p>ที่ทำงานได้มาตรฐานกับแพลตฟอร์มระดับโลกอย่าง Google พร้อมให้บริการจองโต๊ะ</p>
+                                <h4>บน Google Search & Maps แล้ววันนี้</h4>
+                                <h5>ชมตัวอย่างการใช้งาน</h5>
+                                <img />
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                <p>สะดวก รวดเร็ว มอบความประทับใจให้ลูกค้า</p>
+
+                            </div>
+                            <div clasName="col-12">
+
+                            </div>
+                        </div>
+                    </div>
             </section>
             </>
         );
