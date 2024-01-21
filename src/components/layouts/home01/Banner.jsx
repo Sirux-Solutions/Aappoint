@@ -112,11 +112,17 @@ class Banner extends Component {
                     <div className='container'>
                         <div className='row justify-content-center'>
                             <div className='col-6 text-center'>
+
+                            {/* TODO: Update Styling */}
                                 <h3>AAppoint แพลตฟอร์มอันดับ 1 ของคนไทย</h3>
-                                <p>ที่ทำงานได้มาตรฐานกับแพลตฟอร์มระดับโลกอย่าง Google พร้อมให้บริการจองโต๊ะ</p>
+                                <p>ที่ทำงานได้มาตรฐานกับแพลตฟอร์มระดับโลกอย่าง <span><img width="100px" src="assets/images/banner/Google_logo.png"/></span> </p>
+                                <p>พร้อมให้บริการจองโต๊ะ</p>
                                 <h4>บน Google Search & Maps แล้ววันนี้</h4>
                                 <h5>ชมตัวอย่างการใช้งาน</h5>
-                                <img />
+                                <div>
+                                <img width="200px" src="assets/images/banner/AAppoint_logo.png"/> x <img width="300px" src="assets/images/banner/Reserve_with_google.png"/>
+
+                                </div>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                <p>สะดวก รวดเร็ว มอบความประทับใจให้ลูกค้า</p>
 
                             </div>
