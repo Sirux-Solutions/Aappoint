@@ -8,26 +8,32 @@ class Services extends Component {
            features: [
                 {
                     id: 1,
-                    icon: 'bi bi-laptop',
-                    title: 'ระบบคิวจัดการผ่านออนไลน์',
+                    icon: 'assets/images/services/icon-01.png',
+                    title: 'สมัครใช้งานวันนี้ พร้อมเปิดใช้งานทันที',
                     text: ''
                 },
                 {
                     id: 2,
-                    icon: 'bi bi-geo-alt',
-                    title: 'เพิ่มปุ่ม “จองโต๊ะ” บน Google Maps สำหรับธุรกิจร้านอาหาร',
+                    icon: 'assets/images/services/icon-02.png',
+                    title: 'แจ้ง Booking อัตโนมัติ ผ่าน SMS และ E-mail',
                     text: ''
                 },
                 {
                     id: 3,
-                    icon: 'bi bi-phone',
-                    title: 'ลูกค้าจองคิวผ่าน แอพพลิเคชั่น AAppoint',
+                    icon: 'assets/images/services/icon-03.png',
+                    title: 'ใช้งานพร้อมกันได้ ไม่จำกัดจำนวนเครื่อง ทุกที่ ทุกเวลา',
                     text: ''
                 },
                 {
                     id: 4,
-                    icon: 'bi bi-envelope',
-                    title: 'แจ้งเตือนนัดหมาย ผ่าน SMS และ E-mail',
+                    icon: 'assets/images/services/icon-04.png',
+                    title: 'เห็นยอดขายล่วงหน้า',
+                    text: ''
+                },
+                {
+                    id: 5,
+                    icon: 'assets/images/services/icon-05.png',
+                    title: 'รองรับการใช้งานทุกภาษา',
                     text: ''
                 },
             ]
@@ -50,10 +56,10 @@ class Services extends Component {
                     <div className='row justify-content-center pt-2 pb-2'>
                     <div className='col-2'></div>
                     <div className="col-lg-4 col-md-4 text-center">
-                        <img width="75%" src='assets/images/services/reserve-01.png'/>
+                        <img height="500px" src='assets/images/services/reserve-01.png'/>
                     </div>
                     <div className="col-lg-4 col-md-4 text-center">
-                    <img width="75%" src='assets/images/services/reserve-01.png'/>
+                    <img height="500px" src='assets/images/services/reserve-02.png'/>
                     </div>
                     <div className='col-2'></div>
                     </div>
@@ -61,22 +67,22 @@ class Services extends Component {
                     <div className='row justify-content-center pt-5 pb-5'>
                     <div className='col-2'></div>
                     <div className="col-lg-4 col-md-4 text-center">
-                        <img width="75%" src='assets/images/services/reserve-01.png'/>
+                        <img height="500px" src='assets/images/services/reserve-03.png'/>
                     </div>
                     <div className="col-lg-4 col-md-4 text-center">
-                    <img width="75%" src='assets/images/services/reserve-01.png'/>
+                    <img height="500px"  src='assets/images/services/reserve-04.png'/>
                     </div>
                     <div className='col-2'></div>
                     </div>
 
 
-
-                    <div className="row ">
+                </div>
+                <div className="row justify-content-around">
                         {
                             this.state.features.map((data,index) => (
-                                <div className="col-lg-3 col-md-4">
+                                <div className="col-lg-2 col-md-4">
                                     <div className="feature-style-2 mb-4 mb-lg-0" key={data.id}>
-                                        <i className={data.icon}></i>
+                                        <img width="50px" src={data.icon}/>
                                         <div className="feature-text">
                                             <h4>{data.title}</h4>
                                             <p>{data.text}</p>
@@ -88,7 +94,6 @@ class Services extends Component {
                         }
                         
                     </div>
-                </div>
             </section> 
         );
     }
