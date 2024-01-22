@@ -53,7 +53,7 @@ class Banner extends Component {
                                     }  
 
                                     <li className='nav-item mx-3'>
-                                        <HashLink  className="nav-link js-scroll-trigger auth-link-button">เข้าสู่ระบบ</HashLink>
+                                        <HashLink to={"https://shop.aappoint.me/login"}  className="nav-link js-scroll-trigger auth-link-button">เข้าสู่ระบบ</HashLink>
                                     </li>                                    
                                     
                                 </ul>
@@ -122,7 +122,7 @@ class Banner extends Component {
                                 <div className='pt-3'>
                                 <img width="200px" src="assets/images/banner/AAppoint_logo.png"/> x <img width="300px" src="assets/images/banner/Reserve_with_google.png"/>
                                 </div>
-                                <iframe className='pt-3' width="560" height="315" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                
+                                <iframe className='pt-3 mx-auto' width="500" height="300" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                
                                 <h4 className='pt-3'>สะดวก <span className='px-3'>รวดเร็ว</span> มอบความประทับใจให้ลูกค้า</h4>
 
                             </div>
