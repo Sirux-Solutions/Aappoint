@@ -111,24 +111,22 @@ class Banner extends Component {
             <section className="text-section pt-5">
                     <div className='container'>
                         <div className='row justify-content-center'>
-                            <div className='col-6 text-center'>
+                            <div className='col-8 text-center'>
 
                             {/* TODO: Update Styling */}
-                                <h3>AAppoint แพลตฟอร์มอันดับ 1 ของคนไทย</h3>
-                                <p>ที่ทำงานได้มาตรฐานกับแพลตฟอร์มระดับโลกอย่าง <span><img width="100px" src="assets/images/banner/Google_logo.png"/></span> </p>
-                                <p>พร้อมให้บริการจองโต๊ะ</p>
-                                <h4>บน Google Search & Maps แล้ววันนี้</h4>
-                                <h5>ชมตัวอย่างการใช้งาน</h5>
-                                <div>
+                                <h1 className='pt-2'><span style={{color:"#FF5590"}}>AAppoint</span> <span style={{color:"#005F72"}}>แพลตฟอร์มอันดับ 1 ของคนไทย</span></h1>
+                                <p className='pt-5' style={{fontSize:"2em"}}>ที่ทำงานได้มาตรฐานกับแพลตฟอร์มระดับโลกอย่าง <span><img width="100px" src="assets/images/banner/Google_logo.png"/></span> </p>
+                                <p style={{fontSize:"2em"}}>พร้อมให้บริการจองโต๊ะ</p>
+                                <h1 style={{color:"#00CBB9"}}>บน Google Search & Maps แล้ววันนี้</h1> <br />
+                                <h2 className='pt-5'>ชมตัวอย่างการใช้งาน</h2>
+                                <div className='pt-3'>
                                 <img width="200px" src="assets/images/banner/AAppoint_logo.png"/> x <img width="300px" src="assets/images/banner/Reserve_with_google.png"/>
-
                                 </div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                <p>สะดวก รวดเร็ว มอบความประทับใจให้ลูกค้า</p>
+                                <iframe className='pt-3' width="560" height="315" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                
+                                <h4 className='pt-3'>สะดวก <span className='px-3'>รวดเร็ว</span> มอบความประทับใจให้ลูกค้า</h4>
 
                             </div>
-                            <div clasName="col-12">
-
-                            </div>
+                            
                         </div>
                     </div>
             </section>
