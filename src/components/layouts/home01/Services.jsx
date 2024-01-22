@@ -47,9 +47,30 @@ class Services extends Component {
                         </div>
                     </div>
 
-                    {/* in react, create a row with 4 columns lg-2 lg-4 lg4 lg-2 where lg2 are empty to create padding, and lg4 contains vertical image with button below it 
+                    <div className='row justify-content-center pt-2 pb-2'>
+                    <div className='col-2'></div>
+                    <div className="col-lg-4 col-md-4 text-center">
+                        <img width="75%" src='assets/images/services/reserve-01.png'/>
+                    </div>
+                    <div className="col-lg-4 col-md-4 text-center">
+                    <img width="75%" src='assets/images/services/reserve-01.png'/>
+                    </div>
+                    <div className='col-2'></div>
+                    </div>
 
- */}
+                    <div className='row justify-content-center pt-5 pb-5'>
+                    <div className='col-2'></div>
+                    <div className="col-lg-4 col-md-4 text-center">
+                        <img width="75%" src='assets/images/services/reserve-01.png'/>
+                    </div>
+                    <div className="col-lg-4 col-md-4 text-center">
+                    <img width="75%" src='assets/images/services/reserve-01.png'/>
+                    </div>
+                    <div className='col-2'></div>
+                    </div>
+
+
+
                     <div className="row ">
                         {
                             this.state.features.map((data,index) => (
