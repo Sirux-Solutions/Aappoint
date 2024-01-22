@@ -53,13 +53,16 @@ class Services extends Component {
                         </div>
                     </div>
 
-                    <div className='row justify-content-center pt-2 pb-2'>
+                    <div className='row justify-content-center pt-2 pb-2 '>
                     <div className='col-2'></div>
                     <div className="col-lg-4 col-md-4 text-center">
                         <img height="500px" src='assets/images/services/reserve-01.png'/>
+                        <p  className='mt-5 pt-2 service-btn mx-auto' style={{width:"100px", height:"50px"}}>1. กดจอง</p>
                     </div>
                     <div className="col-lg-4 col-md-4 text-center">
                     <img height="500px" src='assets/images/services/reserve-02.png'/>
+                    <p  className='mt-5 pt-2 service-btn mx-auto' style={{width:"200px", height:"50px"}}>2. เลือกจำนวนคน วัน-เวลา </p>
+
                     </div>
                     <div className='col-2'></div>
                     </div>
@@ -68,9 +71,11 @@ class Services extends Component {
                     <div className='col-2'></div>
                     <div className="col-lg-4 col-md-4 text-center">
                         <img height="500px" src='assets/images/services/reserve-03.png'/>
+                        <p  className='mt-5 pt-2 service-btn mx-auto' style={{width:"200px", height:"50px"}}>3. คอนเฟิร์ม BOOKING </p>
                     </div>
                     <div className="col-lg-4 col-md-4 text-center">
                     <img height="500px"  src='assets/images/services/reserve-04.png'/>
+                    <p  className='mt-5 pt-2 service-btn mx-auto' style={{width:"200px", height:"50px"}}>4. รับแจ้งเตือนการจอง </p>
                     </div>
                     <div className='col-2'></div>
                     </div>

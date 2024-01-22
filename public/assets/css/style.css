@@ -1547,6 +1547,13 @@ Blog pagination
   border-color: #1FAFA1;
 }
 
+.service-btn {
+  border: 2px solid #0E696C; 
+  border-radius:15px; 
+  background-color: #0E696C; 
+  color:#fff;
+}
+
 /*==========================
 Single Blog Page 
 ===========================*/
