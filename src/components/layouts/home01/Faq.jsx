@@ -71,9 +71,7 @@ class Faq extends Component {
         </div>
       ))}
       
-      <div className="mt-5 text-center">
-        <Link to="#" className="btn btn-main-2">Get it now on amazon</Link>
-      </div>
+    
     </div>
             </div>
         </section>
