@@ -1569,6 +1569,10 @@ Blog pagination
   color:#fff;
 }
 
+.service-card-text {
+  padding-top: 15px;
+}
+
 /*==========================
 Single Blog Page 
 ===========================*/

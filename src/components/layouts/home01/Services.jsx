@@ -9,32 +9,27 @@ class Services extends Component {
                 {
                     id: 1,
                     icon: 'assets/images/services/icon-01.png',
-                    title: 'สมัครใช้งานวันนี้ พร้อมเปิดใช้งานทันที',
-                    text: ''
+                    title: 'สมัครใช้งานวันนี้ พร้อมเปิดใช้งานทันที'
                 },
                 {
                     id: 2,
                     icon: 'assets/images/services/icon-02.png',
-                    title: 'แจ้ง Booking อัตโนมัติ ผ่าน SMS และ E-mail',
-                    text: ''
+                    title: 'แจ้ง Booking อัตโนมัติ ผ่าน SMS และ E-mail'
                 },
                 {
                     id: 3,
                     icon: 'assets/images/services/icon-03.png',
-                    title: 'ใช้งานพร้อมกันได้ ไม่จำกัดจำนวนเครื่อง ทุกที่ ทุกเวลา',
-                    text: ''
+                    title: 'ใช้งานพร้อมกันได้ ไม่จำกัดจำนวนเครื่อง ทุกที่ ทุกเวลา'
                 },
                 {
                     id: 4,
                     icon: 'assets/images/services/icon-04.png',
-                    title: 'เห็นยอดขายล่วงหน้า',
-                    text: ''
+                    title: 'เห็นยอดขายล่วงหน้า'
                 },
                 {
                     id: 5,
                     icon: 'assets/images/services/icon-05.png',
-                    title: 'รองรับการใช้งานทุกภาษา',
-                    text: ''
+                    title: 'รองรับการใช้งานทุกภาษา'
                 },
             ]
         }
@@ -88,9 +83,8 @@ class Services extends Component {
                                 <div className="col-lg-2 col-md-4">
                                     <div className="feature-style-2 mb-4 mb-lg-0" key={data.id}>
                                         <img width="50px" src={data.icon}/>
-                                        <div className="feature-text">
-                                            <h4>{data.title}</h4>
-                                            <p>{data.text}</p>
+                                        <div className="service-card-text">
+                                            <h5>{data.title}</h5>
                                         </div>
                                     </div>
                                 </div>
