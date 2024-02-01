@@ -165,16 +165,21 @@ BUTTONS STYLE
   background: #1FAFA1;
 }
 
-.btn-main-2 {
-  border-color: #1FAFA1;
+.pricing-btn {
+  border-color: #FF4B94;
   color: #fff;
-  background: #1FAFA1;
+  position: relative;
+  top: -75px; /* Adjust the top value as needed */
+  font-size: 1.5em;
+  background: #FF4B94;
+  padding: 25px 50px;
+  border-radius: 20px;
 }
 
-.btn-main-2:hover {
-  background: #0E696C;
+.pricing-btn:hover {
+  background: #FF4B94;
   color: #fff;
-  border-color: #0E696C;
+  border-color: #FF4B94;
 }
 
 .btn-main-tp {
@@ -981,7 +986,10 @@ Testimonial
 .pricing-item {
   text-align: center;
   padding: 45px 35px;
+  border-radius: 15px;
   background: #fff;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 .pricing-item.popular {
@@ -1003,12 +1011,19 @@ Testimonial
 }
 
 .pricing-item .price h3 {
-  padding-top: 30px;
+  padding-top: 0px;
+  margin-top: -5px;
   font-size: 3em;
 }
 
 .pricing-item .price p {
   color: #1FAFA1;
+  font-size: 2em;
+  padding: 20px;
+  margin: 0 45px;
+  text-align: center;
+  line-height: 1.6;
+  
 }
 
 .pricing-item .pricing-footer {
@@ -2253,7 +2268,7 @@ Footer Section
 }
 
 .dark-bg .price h3{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 

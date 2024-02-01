@@ -12,5 +12,7 @@ import Contact from './Contact';
 import News from './News';
 import Footer from './Footer'
 
+
+
 export {Header, Banner, Clients , Reserve, Features, Review, Services,Cta,Pricing, News,
     Faq,Contact,Footer}
