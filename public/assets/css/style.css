@@ -154,9 +154,11 @@ BUTTONS STYLE
 }
 
 .btn-main {
-  background: #239F96;
+  background: #006881;
   color: #fff;
-  border-color: #239F96;
+  border-color: #006881;
+  border-radius:20px;
+  padding-bottom: 20px;
 }
 
 .btn-main:hover {
@@ -556,9 +558,11 @@ Header TopBar
 .banner .banner-content h1 {
   font-size: 60px;
   margin: 15px 0px 25px;
-  line-height: 60px;
+  line-height: 45px;
   letter-spacing: -1px;
   color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
 }
 
 .banner .banner-content p {

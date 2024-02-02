@@ -75,6 +75,10 @@ class Banner extends Component {
                 <div className="container pt-5 pb-5">
                     <div className="row align-items-center justify-content-between">
                         <div className='col-lg-1'>
+                            
+                            <div className='float-end'>
+                                <img src='assets/images/banner/line.png'/>
+                            </div>
 
                         </div>
                         <div className="col-md-12 col-lg-5">

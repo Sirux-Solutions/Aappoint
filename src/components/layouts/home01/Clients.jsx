@@ -43,7 +43,7 @@ class Clients extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
 
-                        <div className="row justify-content-center pb-5">
+                        <div className="row justify-content-center mb-5">
                         {clientLogos.map((logo, index) => (
                             <div key={index} className="col-lg-2 col-sm-6">
                             <Link to={clientURL[index]} target='_blank' >
