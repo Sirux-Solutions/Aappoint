@@ -3,6 +3,27 @@ import {Link} from 'react-router-dom'
 
 class Clients extends Component {
     render() {
+
+        const clientLogos = [];
+        const clientURL = [
+            "http://www.somtumder.com/",
+            "https://www.wongnai.com/restaurants/281722Sl-makkasan-coffee-shop-bangkok-palace-hotel",
+            "https://www.facebook.com/maadae.slowfish",
+            "https://www.cuisinedegarden.com/",
+            "https://www.wongnai.com/reviews/a4631b07722c4b35aff5b46201b50531",
+            "https://www.marieguimarbkk.com/home",
+            "https://www.instagram.com/the_food_trust/?hl=en"
+
+
+        ];
+
+
+        for (let i = 1; i <= 50; i++) {
+        const logoNumber = i < 10 ? `0${i}` : `${i}`;
+        const logoPath = `assets/images/clients/logo shop-${logoNumber}.png`;
+        clientLogos.push(logoPath);
+        }
+
         return (
             <section className="pt-20 center-about bg-grey">
                 <div className="container">
@@ -19,46 +40,23 @@ class Clients extends Component {
 
                 <section className="cta-2 clients pb-5">
                     <div className="container-fluid">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+
                         <div className="row justify-content-center pb-5">
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo1.JPG" alt="" className="img-fluid"/>
-                                </div>
+                        {clientLogos.map((logo, index) => (
+                            <div key={index} className="col-lg-2 col-sm-6">
+                            <Link to={clientURL[index]} target='_blank' >
+                            <div className="client-logo mt-3">
+                                <img src={logo} alt={`Logo ${index + 1}`} className="img-fluid" width={"150px"} height={"150px"} />
                             </div>
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo2.JPG" alt="" className="img-fluid"/>
-                                </div>
+                            </Link>
                             </div>
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo3.JPG" alt="" className="img-fluid"/>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo4.JPG" alt="" className="img-fluid"/>
-                                </div>
-                            </div>
+                        ))}
                         </div>
-                        <div className="row d-flex justify-content-around" >
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo5.JPG" alt="" className="img-fluid"/>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6" >
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo6.JPG" alt="" className="img-fluid"/>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-sm-6">
-                                <div className="client-logo">
-                                    <img src="assets/images/clients/logo7.JPG" alt="" className="img-fluid"/>
-                                </div>
-                            </div>
                         
-                        </div>
+                    </div>
+                    </div>
                     </div>
                 </section>
             </section>
