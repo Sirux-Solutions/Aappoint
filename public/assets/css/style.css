@@ -859,24 +859,24 @@ Testimonial
 
 
 .video-container {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
   height: 100%; /* Set a specific height for the container if needed */
   width: 100%;
 }
 
 .review-item {
   border-radius: 5px;
-  padding: 37px;
+  padding: 0px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background: #fff;
   position: relative;
   border: 1px solid transparent;
-  margin: 0px 20px 20px;
+  /* margin: 0px 20px 20px; */
 }
 
 .review-item .client-img {
