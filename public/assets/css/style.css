@@ -839,6 +839,10 @@ CTA Subscribe
   margin-bottom: 25px;
 }
 
+.contact__form .contact-title {
+  font-weight: normal !important; 
+}
+
 .contact__form textarea.form-control {
   height: auto;
   border-radius: 15px;

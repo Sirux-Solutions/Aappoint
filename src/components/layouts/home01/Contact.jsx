@@ -21,9 +21,10 @@ class Contact extends Component {
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.558141068117!2d100.544423!3d13.7451805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29edb2d4fe647%3A0x8e3f5e2586334016!2sAlma%20Link%20Building!5e0!3m2!1sen!2sus!4v1703282941788!5m2!1sen!2sus" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             <div className="footer-widget footer-contact mb-5 mb-lg-0 pt-3">
                                         <ul className="list-unstyled">
-                                        <li><h6> ที่อยู่: สำนักงานอาคารอัลม่า ลิ้งค์</h6></li>
-                                        <li>เบอร์โทร : 0644255865</li>
-                                        <li>อีเมลล์ : info@aappoint.me</li>
+                                        <li><h6> ที่อยู่: เลขที่ 25 อาคารอัลม่า ลิงค์ ชั้น 17 ห้อง 222 ซอยชิดลม </h6></li>
+                                        <li><h6> ถนนเพลินจิต แขวงลุมพินี เขตปทุมวัน กรุงเทพ 10330</h6></li> 
+                                        <li>เบอร์โทร : 064-425-5865</li>
+                                        <li>อีเมลล์ : customerservice@aappoint.me</li>
                                         </ul>
                             </div>
 
@@ -43,6 +44,18 @@ class Contact extends Component {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group">
+                                            <h4>เลือกหัวข้อ <span className='contact-title'>(เลือกอย่างน้อย 1 หัวข้อ)</span></h4>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12">
+                                        <div className='form-group row'>
+                                            <div className='col-4'>test</div>
+                                            <div className='col-4'>test</div>
+                                            <div className='col-4'>test</div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
                                             <input type="text" id="name" name="name" className="form-control" placeholder="ชื่อ-นามสกุล"/>
                                         </div>
                                     </div>
@@ -52,11 +65,7 @@ class Contact extends Component {
                                             <input type="text" name="name" id="name" className="form-control" placeholder="ประเภทธุรกิจ / ชื่อสถานประกอบการ"/>
                                         </div>
                                     </div>
-                                    <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <input type="text" name="name" id="name" className="form-control" placeholder="จังหวัดสถานประกอบการ"/>
-                                        </div>
-                                    </div>
+                                    
 
                                     <div className="col-lg-12">
                                         <div className="form-group">
@@ -66,7 +75,6 @@ class Contact extends Component {
                                     
                                     <div className="col-lg-12">
                                         <div className="d-lg-flex justify-content-between mt-4">
-                                            <p>* Rest assured. We will not spam at your inbox.</p>
                                             <input id="submit" name="submit" type="submit" className="btn btn-main-2" value="Send Message"/>
                                         </div>
                                     </div>
