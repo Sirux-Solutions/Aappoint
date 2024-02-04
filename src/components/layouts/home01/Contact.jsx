@@ -49,9 +49,9 @@ class Contact extends Component {
                                     </div>
                                     <div className="col-lg-12">
                                         <div className='form-group row'>
-                                            <div className='col-4'>test</div>
-                                            <div className='col-4'>test</div>
-                                            <div className='col-4'>test</div>
+                                            <div className='col-4'><h6 className='contact-select-btn'>สอบถามรายละเอียด</h6></div>
+                                            <div className='col-4'><h6 className='contact-select-btn'>สมัครใช้บริการ</h6></div>
+                                            <div className='col-4'><h6 className='contact-select-btn'>ต้องการยกเลิก</h6></div>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
@@ -62,20 +62,20 @@ class Contact extends Component {
                                     
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input type="text" name="name" id="name" className="form-control" placeholder="ประเภทธุรกิจ / ชื่อสถานประกอบการ"/>
+                                            <input type="text" name="name" id="name" className="form-control" placeholder="ชื่อสถานประกอบการ"/>
                                         </div>
                                     </div>
                                     
 
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <textarea id="message" name="message" cols="30" rows="6" className="form-control" placeholder="หมายเหตุ"></textarea>    
+                                            <textarea id="message" name="message" cols="30" rows="6" className="form-control" placeholder="ข้อมูลเพิ่มเติม, ระบุแพ็กเกจ"></textarea>    
                                         </div>
                                     </div>
                                     
                                     <div className="col-lg-12">
-                                        <div className="d-lg-flex justify-content-between mt-4">
-                                            <input id="submit" name="submit" type="submit" className="btn btn-main-2" value="Send Message"/>
+                                        <div className="d-lg-flex justify-content-end mt-4">
+                                            <input id="submit" name="submit" type="submit" className="btn contact-btn" value="Send Message"/>
                                         </div>
                                     </div>
                                 </div>

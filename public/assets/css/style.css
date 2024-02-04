@@ -179,9 +179,9 @@ BUTTONS STYLE
 }
 
 .pricing-btn:hover {
-  background: #FF4B94;
+  background: #ff9fc5;
   color: #fff;
-  border-color: #FF4B94;
+  border-color: #ff9fc5;
 }
 
 .btn-main-tp {
@@ -837,6 +837,41 @@ CTA Subscribe
 
 .contact__form .form-group {
   margin-bottom: 25px;
+}
+
+.contact-select-btn {
+  background: #29BFA9;
+  color: #fff;
+  border-color: #29BFA9;
+  border-radius:20px;
+  text-align: center;
+  padding: 7px 0px;
+}
+
+.contact-select-btn:hover {
+  cursor: pointer;
+  background: #0E696C;
+  color: #fff;
+  border-color: #0E696C;
+  border-radius:20px;
+  text-align: center;
+  padding: 7px 0px;
+}
+
+.contact-btn{
+  background: #FF4B94;
+  color: #fff;
+  border-color: #FF4B94;
+  border-radius:20px;
+  padding-bottom: 20px;
+}
+
+.contact-btn:hover{
+  background: #ff9fc5;
+  color: #fff;
+  border-color: #ff9fc5;
+  border-radius:20px;
+  padding-bottom: 20px;
 }
 
 .contact__form .contact-title {
