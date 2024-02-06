@@ -70,8 +70,8 @@ class Banner extends Component {
                                                 ))
                                             }
 
-                                            <li className='nav-item mx-3'>
-                                                <HashLink to={"https://shop.aappoint.me/login"} className={scrolled? "nav-link-scrolled js-scroll-trigger auth-link-button" : "nav-link js-scroll-trigger auth-link-button"} >เข้าสู่ระบบ</HashLink>
+                                            <li className='nav-item mx-10'>
+                                                <HashLink to={"https://shop.aappoint.me/login"} id={scrolled? "auth-link-button": "auth-link-button"} className={scrolled? "auth-link-button nav-link-scrolled js-scroll-trigger " : "auth-link-button nav-link js-scroll-trigger"} >เข้าสู่ระบบ</HashLink>
                                             </li>
                                         </ul>
                                     </div>

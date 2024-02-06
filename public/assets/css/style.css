@@ -2095,12 +2095,12 @@ Footer Section
   color:#000;
 }
 
-.auth-link-button {
+#auth-link-button {
   display: inline-block;
-  padding: 10px 30px !important;
+  padding: 5px 30px !important;
   width: 150px;
   border: 3px solid #29BFA9; /* Green border color */
-  border-radius: 15px; /* Adjust border-radius to create an oval shape */
+  border-radius: 20px; /* Adjust border-radius to create an oval shape */
   background-color: #fff; /* White background color */
   color: #29BFA9 /* Green text color */ !important;
   text-align: center;
@@ -2111,9 +2111,9 @@ Footer Section
 }
 
 /* Hover Styles (Optional) */
-.auth-link-button:hover {
+#auth-link-button:hover {
   background-color: #29BFA9; /* Green background color on hover */
-  color: #ffffff !important; /* White text color on hover */
+  color: #fff !important; /* White text color on hover */
 }
 
 .dark-theme .header-socials a {
