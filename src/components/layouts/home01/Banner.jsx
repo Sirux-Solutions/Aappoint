@@ -5,6 +5,8 @@ import menus from '../menus';
 
 
 
+
+
 class Banner extends Component {
     constructor(props){
         super(props);
@@ -31,13 +33,13 @@ class Banner extends Component {
             <section className="banner">
             <header>
                 <div className="site-navigation" id="mainmenu-area">
-                    <nav className="navbar navbar-expand-lg">
+                    <nav className="navbar navbar-expand-lg" >
                         <div className="container">
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="fa fa-bars"></span>
                             </button>
 
-                            <div className=" collapse navbar-collapse justify-content-between" id="navbarMenu">
+                            <div className=" collapse navbar-collapse justify-content-between " id="navbarMenu">
                                 
                                 <ul className="navbar-nav d-flex flex-fill">
                                     <li className='logo nav-item mx-3'>

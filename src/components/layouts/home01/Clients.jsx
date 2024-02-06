@@ -6,7 +6,7 @@ class Clients extends Component {
 
         const clientLogos = [];
         const clientURL = [
-            "http://www.somtumder.com/",
+            "https://maps.app.goo.gl/ZcdfpuUDN1GvNAn76?g_st=ic",
             "https://www.wongnai.com/restaurants/281722Sl-makkasan-coffee-shop-bangkok-palace-hotel",
             "https://www.facebook.com/maadae.slowfish",
             "https://www.cuisinedegarden.com/",

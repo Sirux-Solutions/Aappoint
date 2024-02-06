@@ -23,7 +23,6 @@ body, html {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(238, 122, 122, 0);
 }
 
@@ -863,15 +862,16 @@ CTA Subscribe
   color: #fff;
   border-color: #FF4B94;
   border-radius:20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px !important;
 }
 
 .contact-btn:hover{
   background: #ff9fc5;
   color: #fff;
   border-color: #ff9fc5;
-  border-radius:20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px !important;
 }
 
 .contact__form .contact-title {
