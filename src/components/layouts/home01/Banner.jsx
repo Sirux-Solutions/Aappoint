@@ -10,70 +10,75 @@ import menus from '../menus';
 class Banner extends Component {
     constructor(props){
         super(props);
-        // this.state = {
-        //     listItem: [
-        //         {
-        //             id: 1,
-        //             icon: 'fa fa-business-time',
-        //             title: 'เราช่วยดึงนักท่องเที่ยวมาใช้บริการให้ร้านอาหารของคุณ',
-        //         },
-        //         {
-        //             id: 2,
-        //             icon: 'fa fa-check',
-        //             title: 'ระบบจองคิว เพื่อธุรกิจ',
-        //         },
-        //     ]
-        // }
+        this.state = {
+            scrolled: false
+        };
+        this.handleScroll = this.handleScroll.bind(this);
     }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll() {
+        const scrollTop = window.pageYOffset;
+
+        // Change navbar styles when scrolling
+        if (scrollTop > 50) {
+            this.setState({ scrolled: true });
+        } else {
+            this.setState({ scrolled: false });
+        }
+    }
+
     render() {
+        const { scrolled } = this.state;
+
+        // Define classes for navbar based on scroll state
+        const navbarClasses = scrolled ? 'navbar navbar-expand-lg scrolled' : 'navbar navbar-expand-lg';
+
+        // Define styles for navbar based on scroll state
+        const navbarStyles = scrolled ? { backgroundColor: '#f3f5f5'} : { backgroundColor: 'transparent' };
+
         return (
 // Todo: Add Changing color functionality
 // To fix: Make sure responsive navbar work
             <>
             <section className="banner">
             <header>
-                <div className="site-navigation" id="mainmenu-area">
-                    <nav className="navbar navbar-expand-lg" >
-                        <div className="container">
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="fa fa-bars"></span>
-                            </button>
+                        <div className="site-navigation" id="mainmenu-area">
+                            <nav className={navbarClasses} style={navbarStyles}>
+                                <div className="container">
+                                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span className="fa fa-bars"></span>
+                                    </button>
 
-                            <div className=" collapse navbar-collapse justify-content-between " id="navbarMenu">
-                                
-                                <ul className="navbar-nav d-flex flex-fill">
-                                    <li className='logo nav-item mx-3'>
-                                    <Link to="#" className="navbar-brand">
-                                <img src="assets/images/logo-light.png" alt="aappoint_logo" className="img-fluid logo"/>
-                            </Link>
-                                    </li>
+                                    <div className="collapse navbar-collapse justify-content-between" id="navbarMenu">
+                                        <ul className="navbar-nav d-flex flex-fill">
+                                            <li className='logo nav-item mx-3'>
+                                                <Link to="#" className="navbar-brand">
+                                                    <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
+                                                </Link>
+                                            </li>
 
-                                    {
-                                        menus.map((menu) => (
-                                            <li className="nav-item flex-fill" key={menu.id}><HashLink to={menu.tomenu}  className="nav-link js-scroll-trigger">{menu.namemenu}</HashLink></li>
-                                        ))
-                                    }  
+                                            {
+                                                menus.map((menu) => (
+                                                    <li className="nav-item flex-fill mt-2" key={menu.id}><HashLink to={menu.tomenu} className={scrolled? "nav-link-scrolled js-scroll-trigger" : "nav-link js-scroll-trigger"}>{menu.namemenu}</HashLink></li>
+                                                ))
+                                            }
 
-                                    <li className='nav-item mx-3'>
-                                        <HashLink to={"https://shop.aappoint.me/login"}  className="nav-link js-scroll-trigger auth-link-button">เข้าสู่ระบบ</HashLink>
-                                    </li>                                    
-                                    
-                                </ul>
-                            </div>
-
-                            <div className="header-right-info d-none d-lg-block">
-    {/* <form className="header-search-form">
-        <input type="text" placeholder="Search" className="modern-search-input" />
-        <button type="submit" className="modern-search-button">
-            <i className="fas fa-search" aria-hidden="true" />
-        </button>
-    </form> */}
-</div>
-
-                        </div> 
-                    </nav>
-                </div>
-            </header>
+                                            <li className='nav-item mx-3'>
+                                                <HashLink to={"https://shop.aappoint.me/login"} className={scrolled? "nav-link-scrolled js-scroll-trigger auth-link-button" : "nav-link js-scroll-trigger auth-link-button"} >เข้าสู่ระบบ</HashLink>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </header>
                 <div className="container pt-5 pb-5">
                     <div className="row align-items-center justify-content-between">
                         <div className='col-lg-1'>

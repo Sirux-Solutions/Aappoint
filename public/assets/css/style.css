@@ -411,8 +411,10 @@ Header TopBar
 
 .site-navigation {
   /* border-bottom: 1px solid #eee; */
-  padding-top: 4px;
+  padding-top: 0px !important;
 }
+
+
 
 
 
@@ -424,11 +426,26 @@ Header TopBar
   font-weight: 600;
   text-transform: capitalize;
   font-size: 17px;
-  color: #f0f0f0;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #29BFA9;
+  color: #29BFA9 !important;
+}
+
+.navbar-nav .nav-link-scrolled {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  padding-top: 2px !important;
+  padding-bottom: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #000 !important;
+  
+}
+
+.navbar-nav .nav-link-scrolled:hover {
+  color: #29BFA9 !important;
 }
 
 .navbar-nav .nav-link i {
@@ -2081,7 +2098,8 @@ Footer Section
 .auth-link-button {
   display: inline-block;
   padding: 10px 30px !important;
-  border: 2px solid #29BFA9; /* Green border color */
+  width: 150px;
+  border: 3px solid #29BFA9; /* Green border color */
   border-radius: 15px; /* Adjust border-radius to create an oval shape */
   background-color: #fff; /* White background color */
   color: #29BFA9 /* Green text color */ !important;
