@@ -23,7 +23,6 @@ body, html {
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(238, 122, 122, 0);
 }
 
@@ -179,9 +178,9 @@ BUTTONS STYLE
 }
 
 .pricing-btn:hover {
-  background: #FF4B94;
+  background: #ff9fc5;
   color: #fff;
-  border-color: #FF4B94;
+  border-color: #ff9fc5;
 }
 
 .btn-main-tp {
@@ -412,8 +411,10 @@ Header TopBar
 
 .site-navigation {
   /* border-bottom: 1px solid #eee; */
-  padding-top: 4px;
+  padding-top: 0px !important;
 }
+
+
 
 
 
@@ -425,11 +426,26 @@ Header TopBar
   font-weight: 600;
   text-transform: capitalize;
   font-size: 17px;
-  color: #f0f0f0;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #29BFA9;
+  color: #29BFA9 !important;
+}
+
+.navbar-nav .nav-link-scrolled {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  padding-top: 2px !important;
+  padding-bottom: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #000 !important;
+  
+}
+
+.navbar-nav .nav-link-scrolled:hover {
+  color: #29BFA9 !important;
 }
 
 .navbar-nav .nav-link i {
@@ -839,6 +855,46 @@ CTA Subscribe
   margin-bottom: 25px;
 }
 
+.contact-select-btn {
+  background: #29BFA9;
+  color: #fff;
+  border-color: #29BFA9;
+  border-radius:20px;
+  text-align: center;
+  padding: 7px 0px;
+}
+
+.contact-select-btn:hover {
+  cursor: pointer;
+  background: #0E696C;
+  color: #fff;
+  border-color: #0E696C;
+  border-radius:20px;
+  text-align: center;
+  padding: 7px 0px;
+}
+
+.contact-btn{
+  background: #FF4B94;
+  color: #fff;
+  border-color: #FF4B94;
+  border-radius:20px;
+  padding-bottom: 10px;
+  padding-top: 10px !important;
+}
+
+.contact-btn:hover{
+  background: #ff9fc5;
+  color: #fff;
+  border-color: #ff9fc5;
+  padding-bottom: 10px;
+  padding-top: 10px !important;
+}
+
+.contact__form .contact-title {
+  font-weight: normal !important; 
+}
+
 .contact__form textarea.form-control {
   height: auto;
   border-radius: 15px;
@@ -859,24 +915,24 @@ Testimonial
 
 
 .video-container {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
   height: 100%; /* Set a specific height for the container if needed */
   width: 100%;
 }
 
 .review-item {
   border-radius: 5px;
-  padding: 37px;
+  padding: 0px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background: #fff;
   position: relative;
   border: 1px solid transparent;
-  margin: 0px 20px 20px;
+  /* margin: 0px 20px 20px; */
 }
 
 .review-item .client-img {
@@ -2039,11 +2095,12 @@ Footer Section
   color:#000;
 }
 
-.auth-link-button {
+#auth-link-button {
   display: inline-block;
-  padding: 10px 30px !important;
-  border: 2px solid #29BFA9; /* Green border color */
-  border-radius: 15px; /* Adjust border-radius to create an oval shape */
+  padding: 5px 30px !important;
+  width: 150px;
+  border: 3px solid #29BFA9; /* Green border color */
+  border-radius: 20px; /* Adjust border-radius to create an oval shape */
   background-color: #fff; /* White background color */
   color: #29BFA9 /* Green text color */ !important;
   text-align: center;
@@ -2054,9 +2111,9 @@ Footer Section
 }
 
 /* Hover Styles (Optional) */
-.auth-link-button:hover {
+#auth-link-button:hover {
   background-color: #29BFA9; /* Green background color on hover */
-  color: #ffffff !important; /* White text color on hover */
+  color: #fff !important; /* White text color on hover */
 }
 
 .dark-theme .header-socials a {

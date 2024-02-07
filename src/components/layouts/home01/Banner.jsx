@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import menus from '../menus';
+// import "../../../../node_modules/react-bootstrap/dist/react-bootstrap";
 
 
 
@@ -11,10 +12,12 @@ class Banner extends Component {
     constructor(props){
         super(props);
         this.state = {
-            scrolled: false
+            isNavbarOpen: false // Add state for navbar toggle
         };
         this.handleScroll = this.handleScroll.bind(this);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
     }
+
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
@@ -34,14 +37,22 @@ class Banner extends Component {
         }
     }
 
+    toggleNavbar() {
+        this.setState(prevState => ({
+            isNavbarOpen: !prevState.isNavbarOpen
+        }));
+    }
+
     render() {
-        const { scrolled } = this.state;
+        const { scrolled, isNavbarOpen } = this.state;
 
         // Define classes for navbar based on scroll state
         const navbarClasses = scrolled ? 'navbar navbar-expand-lg scrolled' : 'navbar navbar-expand-lg';
 
         // Define styles for navbar based on scroll state
         const navbarStyles = scrolled ? { backgroundColor: '#f3f5f5'} : { backgroundColor: 'transparent' };
+
+        const navbarContainerClasses = isNavbarOpen ? 'navbar-container open' : 'navbar-container';
 
         return (
 // Todo: Add Changing color functionality
@@ -51,27 +62,32 @@ class Banner extends Component {
             <header>
                         <div className="site-navigation" id="mainmenu-area">
                             <nav className={navbarClasses} style={navbarStyles}>
-                                <div className="container">
-                                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                <div className="container-fluid">
+                                    <button className="navbar-toggler" type="button" onClick={this.toggleNavbar} aria-label="Toggle navigation">
                                         <span className="fa fa-bars"></span>
                                     </button>
-
-                                    <div className="collapse navbar-collapse justify-content-between" id="navbarMenu">
+                                    <div className={`collapse navbar-collapse justify-content-between ${isNavbarOpen ? 'show' : ''}`} id="navbarMenu">
                                         <ul className="navbar-nav d-flex flex-fill">
                                             <li className='logo nav-item mx-3'>
                                                 <Link to="#" className="navbar-brand">
                                                     <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
                                                 </Link>
                                             </li>
-
-                                            {
-                                                menus.map((menu) => (
-                                                    <li className="nav-item flex-fill mt-2" key={menu.id}><HashLink to={menu.tomenu} className={scrolled? "nav-link-scrolled js-scroll-trigger" : "nav-link js-scroll-trigger"}>{menu.namemenu}</HashLink></li>
-                                                ))
-                                            }
-
-                                            <li className='nav-item mx-10'>
-                                                <HashLink to={"https://shop.aappoint.me/login"} id={scrolled? "auth-link-button": "auth-link-button"} className={scrolled? "auth-link-button nav-link-scrolled js-scroll-trigger " : "auth-link-button nav-link js-scroll-trigger"} >เข้าสู่ระบบ</HashLink>
+                                            {menus.map((menu) => (
+                                                <li className="nav-item flex-fill mt-2" key={menu.id}>
+                                                    <HashLink to={menu.tomenu} className={scrolled ? "nav-link-scrolled js-scroll-trigger" : "nav-link js-scroll-trigger"}>
+                                                        {menu.namemenu}
+                                                    </HashLink>
+                                                </li>
+                                            ))}
+                                            <li className='nav-item mx-5'>
+                                                <HashLink
+                                                    to={"https://shop.aappoint.me/login"}
+                                                    id={scrolled ? "auth-link-button" : "auth-link-button"}
+                                                    className={scrolled ? "auth-link-button nav-link-scrolled js-scroll-trigger " : "auth-link-button nav-link js-scroll-trigger"}
+                                                >
+                                                    เข้าสู่ระบบ
+                                                </HashLink>
                                             </li>
                                         </ul>
                                     </div>

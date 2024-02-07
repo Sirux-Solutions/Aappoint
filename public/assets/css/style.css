@@ -414,6 +414,26 @@ Header TopBar
   padding-top: 0px !important;
 }
 
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust height as needed */
+  transition: height 0.3s ease; /* Animation transition */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar-container.open {
+  height: 100vh; /* Fullscreen height when open */
+}
+
+.navbar {
+  transition: background-color 0.3s ease; /* Animation transition */
+  position: relative;
+  width: 100%;
+}
+
 
 
 
