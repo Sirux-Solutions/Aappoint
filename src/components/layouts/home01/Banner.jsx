@@ -70,7 +70,7 @@ class Banner extends Component {
                                         <span className="fa fa-bars"></span>
                                     </button>                                    
                                     </Navbar.Toggle>
-                                    <Navbar.Collapse id="basic-navbar-nav" className={`mt-4 collapse navbar-collapse justify-content-between ${isNavbarOpen ? 'show' : ''}`}>
+                                    <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-between mt-4 collapse navbar-collapse  ${isNavbarOpen ? 'show' : ''}`}>
                                     <Nav className="me-auto">
                                     <ul className="navbar-nav d-flex flex-fill ">
                                             
