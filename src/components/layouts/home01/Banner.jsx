@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import menus from '../menus';
-// import "../../../../node_modules/react-bootstrap/dist/react-bootstrap";
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 
@@ -15,7 +17,6 @@ class Banner extends Component {
             isNavbarOpen: false // Add state for navbar toggle
         };
         this.handleScroll = this.handleScroll.bind(this);
-        this.toggleNavbar = this.toggleNavbar.bind(this);
     }
 
     componentDidMount() {
@@ -37,11 +38,7 @@ class Banner extends Component {
         }
     }
 
-    toggleNavbar() {
-        this.setState(prevState => ({
-            isNavbarOpen: !prevState.isNavbarOpen
-        }));
-    }
+    
 
     render() {
         const { scrolled, isNavbarOpen } = this.state;
@@ -61,23 +58,27 @@ class Banner extends Component {
             <section className="banner">
             <header>
                         <div className="site-navigation" id="mainmenu-area">
-                            <nav className={navbarClasses} style={navbarStyles}>
-                                <div className="container-fluid">
-                                    <button className="navbar-toggler" type="button" onClick={this.toggleNavbar} aria-label="Toggle navigation">
+                            <Navbar  expand="lg" className={navbarClasses} style={navbarStyles}>
+                                <Container>
+                                    <Navbar.Brand href="#">
+                                        <Link to="#"  className="navbar-brand">
+                                            <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
+                                        </Link>
+                                    </Navbar.Brand>
+                                    <Navbar.Toggle style={{padding:"0px"}} aria-controls="basic-navbar-nav" >
+                                    <button className="navbar-toggler" type="button" aria-label="Toggle navigation">
                                         <span className="fa fa-bars"></span>
-                                    </button>
-                                    <div className={`collapse navbar-collapse justify-content-between ${isNavbarOpen ? 'show' : ''}`} id="navbarMenu">
-                                        <ul className="navbar-nav d-flex flex-fill">
-                                            <li className='logo nav-item mx-3'>
-                                                <Link to="#" className="navbar-brand">
-                                                    <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
-                                                </Link>
-                                            </li>
+                                    </button>                                    
+                                    </Navbar.Toggle>
+                                    <Navbar.Collapse id="basic-navbar-nav" className={`mt-4 collapse navbar-collapse justify-content-between ${isNavbarOpen ? 'show' : ''}`}>
+                                    <Nav className="me-auto">
+                                    <ul className="navbar-nav d-flex flex-fill ">
+                                            
                                             {menus.map((menu) => (
                                                 <li className="nav-item flex-fill mt-2" key={menu.id}>
-                                                    <HashLink to={menu.tomenu} className={scrolled ? "nav-link-scrolled js-scroll-trigger" : "nav-link js-scroll-trigger"}>
+                                                <Nav.Link href={menu.tomenu} className={scrolled ? "nav-link-scrolled js-scroll-trigger" : "nav-link js-scroll-trigger"}>
                                                         {menu.namemenu}
-                                                    </HashLink>
+                                                </Nav.Link>
                                                 </li>
                                             ))}
                                             <li className='nav-item mx-5'>
@@ -89,10 +90,14 @@ class Banner extends Component {
                                                     เข้าสู่ระบบ
                                                 </HashLink>
                                             </li>
+
+                                            
                                         </ul>
-                                    </div>
-                                </div>
-                            </nav>
+                                        
+                                    </Nav>
+                                    </Navbar.Collapse>
+                                </Container>
+                            </Navbar>
                         </div>
                     </header>
                 <div className="container pt-5 pb-5">

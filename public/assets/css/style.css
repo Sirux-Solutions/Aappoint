@@ -414,18 +414,20 @@ Header TopBar
   padding-top: 0px !important;
 }
 
+
+
 .navbar-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Adjust height as needed */
+  height: 50px; /* Adjust height as needed */
   transition: height 0.3s ease; /* Animation transition */
   z-index: 1000; /* Ensure navbar is above other content */
 }
 
 .navbar-container.open {
-  height: 100vh; /* Fullscreen height when open */
+  height: 50px; /* Fullscreen height when open */
 }
 
 .navbar {
@@ -1203,6 +1205,13 @@ FAQ
    box-shadow:none;
 }
 
+.show {
+  height: 500px;
+  position: absolute;
+  padding-top: 50px;
+  text-align: center;
+  
+}
 .more-less {
   float: right;
 }
@@ -2041,6 +2050,9 @@ Footer Section
 .dark-theme .navbar-brand h2{
   color: #fff;
 }
+
+
+
 
 .btn-dark-bg2{
   background :#04122D;

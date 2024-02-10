@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import "../node_modules/react-bootstrap/dist/react-bootstrap";
 
 import routes from './components/pages/index';
 
