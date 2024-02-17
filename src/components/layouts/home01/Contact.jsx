@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import emailjs from 'emailjs-com';
+
 
 class Contact extends Component {
+    state = {
+        messageSent: false // Initially, message is not sent
+    };
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_m3vnk6l', 'template_xn51i9i', e.target, 'Johl7N3V6cKfuAPI5')
+            .then((result) => {
+                console.log(result.text);
+                this.setState({ messageSent: true }); // Set messageSent to true upon successful submission
+            }, (error) => {
+                console.log(error.text);
+                // Display error message or perform any other action upon submission failure
+            });
+    };
+
     render() {
         return (
                                     
@@ -32,14 +49,14 @@ class Contact extends Component {
                             
                         </div>                    
                         <div className="col-lg-6">
-                            <form className="contact__form form-row contact-form " method="post" action="mail.php" id="contactForm" >
-                                {/* <div className="row">
+                        <form className="contact__form form-row contact-form" onSubmit={this.handleSubmit}>
+                                <div className="row">
                                     <div className="col-12">
                                         <div className="alert alert-success contact__msg" style={{display:'none'}} role="alert">
                                             Your message was sent successfully.
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                             
                                 <div className="row">
                                     <div className="col-lg-12">
@@ -75,14 +92,22 @@ class Contact extends Component {
                                     
                                     <div className="col-lg-12">
                                         <div className="d-lg-flex justify-content-end mt-4">
-                                            <input id="submit" name="submit" type="submit" className="btn contact-btn" value="Send Message"/>
+                                            <button type="submit" className="btn contact-btn">Send Message</button>
                                         </div>
-                                    </div>
+                                </div>
                                 </div>
                             </form> 
                         </div>
                     </div>
                     </div>
+                    {this.state.messageSent && (
+                    <div className="alert alert-success alert-dismissible fade show" role="alert">
+                        Your message was sent successfully.
+                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                )}
             </section>
         );
     }
