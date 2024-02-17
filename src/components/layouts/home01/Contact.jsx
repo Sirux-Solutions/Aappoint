@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 
 
+
 class Contact extends Component {
     state = {
         messageSent: false // Initially, message is not sent
+    };
+
+    handleCloseAlert = () => {
+        this.setState({ messageSent: false });
     };
 
     handleSubmit = (e) => {
@@ -101,11 +106,11 @@ class Contact extends Component {
                     </div>
                     </div>
                     {this.state.messageSent && (
+                        
                     <div className="alert alert-success alert-dismissible fade show" role="alert">
                         Your message was sent successfully.
-                        <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <button type="button" className="btn-close" aria-label="Close" onClick={this.handleCloseAlert}></button>
+
                     </div>
                 )}
             </section>
