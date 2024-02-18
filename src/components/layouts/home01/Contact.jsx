@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import ToggleButton from 'react-bootstrap/ToggleButton';
 import emailjs from 'emailjs-com';
 
-
-
 class Contact extends Component {
-    state = {
-        messageSent: false // Initially, message is not sent
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            messageSent: false, // Initially, message is not sent
+            selectedOption: null, // Initially, no option is selected
+            checked: false,
+            radioValue: '1'
+        };
+    }
 
     handleCloseAlert = () => {
         this.setState({ messageSent: false });
@@ -24,7 +30,22 @@ class Contact extends Component {
             });
     };
 
+    handleCheckedChange = (e) => {
+        this.setState({ checked: e.currentTarget.checked });
+      };
+    
+      handleRadioChange = (e) => {
+        this.setState({ radioValue: e.currentTarget.value });
+      };
+
     render() {
+        const { checked, radioValue } = this.state;
+
+        const radios = [
+            { name: 'สอบถามรายละเอียด', value: '1' },
+            { name: 'สมัครใช้บริการ', value: '2' },
+            { name: 'ต้องการยกเลิก', value: '3' },
+        ];
         return (
                                     
             <section className="section-padding contact bg-white" id="contact">
@@ -65,20 +86,36 @@ class Contact extends Component {
                             
                                 <div className="row">
                                     <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <h4>เลือกหัวข้อ <span className='contact-title'>(เลือกอย่างน้อย 1 หัวข้อ)</span></h4>
-                                        </div>
-                                    </div>
+                        <div className="form-group">
+                            <h4>เลือกหัวข้อ <span className='contact-title'>(เลือกอย่างน้อย 1 หัวข้อ)</span></h4>
+                        </div>
+                    </div>
+                    <div className="col-lg-12">
+                        <div className='form-group row'>
+                            <div className='col-12 mx-4'>
+                            <ButtonGroup>
+                                {radios.map((radio, idx) => (
+                                    <ToggleButton
+                                        key={idx}
+                                        id={`radio-${idx}`}
+                                        type="radio"
+                                        variant={idx == 2 ? 'outline-danger' : 'outline-success'}
+                                        name="radio"
+                                        value={radio.value}
+                                        checked={radioValue === radio.value}
+                                        onChange={this.handleRadioChange}
+                                        >
+                                        {radio.name}
+                                    </ToggleButton>
+                                ))}
+                            </ButtonGroup>
+      </div>
+
+                        </div>
+                    </div>
                                     <div className="col-lg-12">
-                                        <div className='form-group row'>
-                                            <div className='col-4'><h6 className='contact-select-btn'>สอบถามรายละเอียด</h6></div>
-                                            <div className='col-4'><h6 className='contact-select-btn'>สมัครใช้บริการ</h6></div>
-                                            <div className='col-4'><h6 className='contact-select-btn'>ต้องการยกเลิก</h6></div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input type="text" id="name" name="name" className="form-control" placeholder="ชื่อ-นามสกุล"/>
+                                            <input type="text" id="fullName" name="fullName" className="form-control" placeholder="ชื่อ-นามสกุล"/>
                                         </div>
                                     </div>
                                     
@@ -106,12 +143,12 @@ class Contact extends Component {
                     </div>
                     </div>
                     {this.state.messageSent && (
-                        
+                    
                     <div className="alert alert-success alert-dismissible fade show" role="alert">
                         Your message was sent successfully.
                         <button type="button" className="btn-close" aria-label="Close" onClick={this.handleCloseAlert}></button>
-
                     </div>
+            
                 )}
             </section>
         );
