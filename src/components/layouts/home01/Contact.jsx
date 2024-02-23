@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 
 class Contact extends Component {
@@ -14,7 +16,7 @@ class Contact extends Component {
         };
     }
 
-    handleCloseAlert = () => {
+    handleCloseToast = () => {
         this.setState({ messageSent: false });
     };
 
@@ -24,8 +26,10 @@ class Contact extends Component {
             .then((result) => {
                 console.log(result.text);
                 this.setState({ messageSent: true });
+                toast.success("Your message was sent successfully.");
             }, (error) => {
                 console.log(error.text);
+                toast.error("Error sending message. Please try again later.");
             });
     };
 
@@ -34,19 +38,20 @@ class Contact extends Component {
     };
     
     handleRadioChange = (e) => {
-        let title = ''
+        let title = '';
         if (e.currentTarget.value === '1'){
-            title = 'สอบถามรายละเอียด'
+            title = 'สอบถามรายละเอียด';
         }
-        else if (e.target.value === '2'){
-            title = 'สมัครใช้บริการ'
+        else if (e.currentTarget.value === '2'){
+            title = 'สมัครใช้บริการ';
         }
         else {
-            title = 'ต้องการยกเลิก'
+            title = 'ต้องการยกเลิก';
         }
         this.setState({ 
             radioValue: e.currentTarget.value, 
-            subject: title });
+            subject: title 
+        });
     };
 
     render() {
@@ -60,6 +65,7 @@ class Contact extends Component {
         
         return (
             <section className="section-padding contact bg-white" id="contact">
+                <ToastContainer />
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-12">
@@ -145,12 +151,6 @@ class Contact extends Component {
                         </div>
                     </div>
                 </div>
-                {this.state.messageSent && (
-                    <div className="alert alert-success alert-dismissible fade show" role="alert">
-                        Your message was sent successfully.
-                        <button type="button" className="btn-close" aria-label="Close" onClick={this.handleCloseAlert}></button>
-                    </div>
-                )}
             </section>
         );
     }
