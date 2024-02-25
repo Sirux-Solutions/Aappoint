@@ -158,7 +158,6 @@ class Banner extends Component {
                         <div className='row justify-content-center'>
                             <div className='col-8 text-center'>
 
-                            {/* TODO: Update Styling */}
                                 <h1 className='pt-2'><span style={{color:"#FF5590"}}>AAppoint</span> <span style={{color:"#005F72"}}>แพลตฟอร์มอันดับ 1 ของคนไทย</span></h1>
                                 <p className='pt-5' style={{fontSize:"2em"}}>ที่ทำงานได้มาตรฐานกับแพลตฟอร์มระดับโลกอย่าง <span><img width="100px" src="assets/images/banner/Google_logo.png"/></span> </p>
                                 <p style={{fontSize:"2em"}}>พร้อมให้บริการจองโต๊ะ</p>
@@ -167,7 +166,11 @@ class Banner extends Component {
                                 <div className='pt-3'>
                                 <img width="200px" src="assets/images/banner/AAppoint_logo.png"/> x <img width="300px" src="assets/images/banner/Reserve_with_google.png"/>
                                 </div>
-                                <iframe className='pt-3 mx-auto' width="500" height="300" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                
+                                <div className="row justify-content-center">
+                                    <div className="col-sm-12 col-md-6 text-center">                                
+                                    <iframe className='pt-3 ml-4' width="100%" height="400" src="https://www.youtube.com/embed/W0l5Lb7kfi4?si=a3Di5sXl1SDImv5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                                
+                                </div>
+                                </div>
                                 <h4 className='pt-3'>สะดวก <span className='px-3'>รวดเร็ว</span> มอบความประทับใจให้ลูกค้า</h4>
 
                             </div>

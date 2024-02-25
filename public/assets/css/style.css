@@ -2166,6 +2166,7 @@ Footer Section
   color: #fff !important; /* White text color on hover */
 }
 
+
 #external-auth-link-button {
   display: inline-block;
   padding: 5px 30px !important;
@@ -2222,6 +2223,7 @@ Footer Section
 .dark-theme .menu_fixed .header-socials a{
   color:  #fff
 }
+
 
 .dark-theme .menu_fixed .header-socials a:hover{
   background:#0E696C;
