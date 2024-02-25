@@ -81,10 +81,10 @@ class Banner extends Component {
                                                 </Nav.Link>
                                                 </li>
                                             ))}
-                                            <li className='nav-item'>
+                                            <li className='nav-item mx-3'>
                                                 <HashLink
                                                     to={"https://marketplace.aappoint.me"}
-                                                    id={scrolled ? "auth-link-button" : "auth-link-button"}
+                                                    id={scrolled ? "external-auth-link-button" : "external-auth-link-button"}
                                                     className={scrolled ? "auth-link-button nav-link-scrolled js-scroll-trigger " : "auth-link-button nav-link js-scroll-trigger"}
                                                 >
                                                     จองร้านค้า
@@ -92,7 +92,7 @@ class Banner extends Component {
                                                 
                                             </li>
 
-                                            <li className='nav-item'>
+                                            <li className='nav-item mx-3'>
                                                 <HashLink
                                                     to={"https://shop.aappoint.me/login"}
                                                     id={scrolled ? "auth-link-button" : "auth-link-button"}
