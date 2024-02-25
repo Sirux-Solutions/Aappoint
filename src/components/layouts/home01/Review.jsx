@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
-import ReactPlayer from 'react-player/youtube';
 
 class Review extends Component {
     constructor(props){
@@ -115,8 +114,8 @@ class Review extends Component {
             </div>
             <div className="container-fluid">
             <div className="row justify-content-center">
-                    <div className="col-lg-12">
-                        <div className="testimonials-slides">
+                    <div className="col-lg-12 col-sm-12">
+                        <div className="testimonials-slides ">
                         <Slider {...settings} >
                             {
                                 this.state.testimonial.map((data) => (
@@ -127,19 +126,6 @@ class Review extends Component {
 
                                         
                                         <div className="video-container" ><iframe allow="fullscreen" allowfullscreen height="500px" src={data.video} width="100%"></iframe></div>
-
-                                            {/* <div className="client-info text-center"> */}
-                                            {/* <div className="rating">
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                            </div> */}
-                                            {/* <h4>{data.quoteText}</h4>
-                                            <p>{data.text}</p>
-                                            
-                                        </div> */}
 
                                         
                                     </div> 
