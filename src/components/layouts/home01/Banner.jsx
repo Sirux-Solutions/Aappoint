@@ -81,7 +81,7 @@ class Banner extends Component {
                                                 </Nav.Link>
                                                 </li>
                                             ))}
-                                            <li className='nav-item mx-3'>
+                                            <li className='nav-item mx-3 mb-3'>
                                                 <HashLink
                                                     to={"https://marketplace.aappoint.me"}
                                                     id={scrolled ? "external-auth-link-button" : "external-auth-link-button"}
@@ -92,7 +92,7 @@ class Banner extends Component {
                                                 
                                             </li>
 
-                                            <li className='nav-item mx-3'>
+                                            <li className='nav-item mx-3 mb-3'>
                                                 <HashLink
                                                     to={"https://shop.aappoint.me/login"}
                                                     id={scrolled ? "auth-link-button" : "auth-link-button"}
@@ -115,14 +115,14 @@ class Banner extends Component {
                     </header>
                 <div className="container pt-5 pb-5">
                     <div className="row align-items-center justify-content-between">
-                        <div className='col-lg-1'>
+                        <div className='col-lg-1 col-sm-1'>
                             
                             <div className='float-end'>
                                 <img src='assets/images/banner/line.png'/>
                             </div>
 
                         </div>
-                        <div className="col-md-12 col-lg-5">
+                        <div className="col-sm-10 col-lg-5">
                             <div className="banner-content">
                                 {/* <span className="subheading"></span> */}
                                 <h1>เพิ่มปุ่ม จองโต๊ะ</h1>
