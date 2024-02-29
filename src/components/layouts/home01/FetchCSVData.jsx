@@ -123,7 +123,7 @@ export default function FetchCSVData(props) {
                             {csvData.map((row, index) => (
                             <div key={index}>
                                 {/* Render each row data here */}
-                                <p>{JSON.stringify(row)}</p>
+                                {/* <p>{JSON.stringify(row)}</p> */}
                             </div>
                         ))}
                         </div>

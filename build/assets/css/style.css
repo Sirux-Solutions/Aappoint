@@ -416,6 +416,28 @@ Header TopBar
 
 
 
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust height as needed */
+  transition: height 0.3s ease; /* Animation transition */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar-container.open {
+  height: 50px; /* Fullscreen height when open */
+}
+
+.navbar {
+  transition: background-color 0.3s ease; /* Animation transition */
+  position: relative;
+  width: 100%;
+}
+
+
+
 
 
 .navbar-nav .nav-link {
@@ -839,6 +861,24 @@ CTA Subscribe
 /*========================
  Contact Section
 ============================*/
+
+.alert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.toggle-btn {
+  background: #29BFA9;
+  color: #fff;
+  border-color: #29BFA9;
+  border-radius:20px;
+  text-align: center;
+  padding: 7px 0px;
+}
+
 .contact__form .form-control {
   height: 55px;
   border-radius: 46px;
@@ -1183,6 +1223,13 @@ FAQ
    box-shadow:none;
 }
 
+.show {
+  height: 500px;
+  position: absolute;
+  padding-top: 50px;
+  text-align: center;
+  
+}
 .more-less {
   float: right;
 }
@@ -2022,6 +2069,9 @@ Footer Section
   color: #fff;
 }
 
+
+
+
 .btn-dark-bg2{
   background :#04122D;
   color: #fff;
@@ -2116,6 +2166,30 @@ Footer Section
   color: #fff !important; /* White text color on hover */
 }
 
+
+#external-auth-link-button {
+  display: inline-block;
+  padding: 5px 30px !important;
+  width: 150px;
+  border: 3px solid #29BFA9; /* Green border color */
+  border-radius: 20px; /* Adjust border-radius to create an oval shape */
+  background-color: #29BFA9; /* White background color */
+  color: #fff /* Green text color */ !important;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: none !important;
+}
+
+/* Hover Styles (Optional) */
+#external-auth-link-button:hover {
+  background-color: #fff; /* Green background color on hover */
+  color: #29BFA9 !important; /* White text color on hover */
+  border: 3px solid #fff; /* Green border color */
+
+}
+
 .dark-theme .header-socials a {
   border-color: rgba(255,255,255,0.01);
   color: #fff;
@@ -2149,6 +2223,7 @@ Footer Section
 .dark-theme .menu_fixed .header-socials a{
   color:  #fff
 }
+
 
 .dark-theme .menu_fixed .header-socials a:hover{
   background:#0E696C;
