@@ -61,7 +61,7 @@ class Reserve extends Component {
                             ))
                         }
                         
-                        <Link to="#" className="btn btn-main-2"><i className="fa fa-check me-2"></i>เรียนรู้เพิ่มเติม</Link> 
+                        <Link to="#" className="btn btn-main"><i className="fa fa-check me-2"></i>เรียนรู้เพิ่มเติม</Link> 
                     </div>
                 </div>
             </div>

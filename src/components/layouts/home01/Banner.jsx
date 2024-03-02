@@ -115,14 +115,14 @@ class Banner extends Component {
                     </header>
                 <div className="container pt-5 pb-5">
                     <div className="row align-items-center justify-content-between">
-                        <div className='col-lg-1 col-sm-1'>
+                        <div className='col-lg-1 col-sm-1 col-2'>
                             
                             <div className='float-end'>
                                 <img src='assets/images/banner/line.png'/>
                             </div>
 
                         </div>
-                        <div className="col-sm-10 col-lg-5">
+                        <div className="col-10 col-sm-10 col-lg-5">
                             <div className="banner-content">
                                 {/* <span className="subheading"></span> */}
                                 <h1>เพิ่มปุ่ม จองโต๊ะ</h1>
