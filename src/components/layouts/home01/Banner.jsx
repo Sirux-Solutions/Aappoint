@@ -7,16 +7,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-
-
-
 class Banner extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isNavbarOpen: false // Add state for navbar toggle
+            isNavbarOpen: false, // Add state for navbar toggle
+            scrolled: false // Add state for navbar scrolling
         };
         this.handleScroll = this.handleScroll.bind(this);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
     }
 
     componentDidMount() {
@@ -38,7 +37,11 @@ class Banner extends Component {
         }
     }
 
-    
+    toggleNavbar() {
+        this.setState(prevState => ({
+            isNavbarOpen: !prevState.isNavbarOpen
+        }));
+    }
 
     render() {
         const { scrolled, isNavbarOpen } = this.state;
@@ -52,10 +55,8 @@ class Banner extends Component {
         const navbarContainerClasses = isNavbarOpen ? 'navbar-container open' : 'navbar-container';
 
         return (
-// Todo: Add Changing color functionality
-// To fix: Make sure responsive navbar work
             <>
-            <section className="banner">
+            <section className="banner" id="home">
             <header>
                         <div className="site-navigation" id="mainmenu-area">
                             <Navbar  expand="lg" className={navbarClasses} style={navbarStyles}>
@@ -65,7 +66,7 @@ class Banner extends Component {
                                             <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
                                         </Link>
                                     </Navbar.Brand>
-                                    <Navbar.Toggle style={{padding:"0px"}} aria-controls="basic-navbar-nav" >
+                                    <Navbar.Toggle onClick={this.toggleNavbar} style={{padding:"0px"}} aria-controls="basic-navbar-nav" >
                                     <button className="navbar-toggler" type="button" aria-label="Toggle navigation">
                                         <span className="fa fa-bars"></span>
                                     </button>                                    
@@ -184,4 +185,3 @@ class Banner extends Component {
 }
 
 export default Banner;
-

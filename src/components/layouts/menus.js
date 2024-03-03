@@ -1,7 +1,7 @@
 const menus = [
     {
         id: 1,
-        tomenu: "#",
+        tomenu: "#home",
         namemenu: "หน้าแรก"
     },
     {

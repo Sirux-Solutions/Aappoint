@@ -160,6 +160,14 @@ BUTTONS STYLE
   padding-bottom: 20px;
 }
 
+.btn-learn {
+  background: #006881;
+  color: #fff;
+  border-color: #006881;
+  border-radius:15px;
+  padding: 20px;
+}
+
 .btn-main:hover {
   color: #fff;
   border-color: #1FAFA1;
