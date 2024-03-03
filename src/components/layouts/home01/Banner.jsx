@@ -62,9 +62,9 @@ class Banner extends Component {
                             <Navbar  expand="lg" className={navbarClasses} style={navbarStyles}>
                                 <Container>
                                     <Navbar.Brand href="#">
-                                        <Link to="#"  className="navbar-brand">
+                                    <Nav.Link href="#home" className="navbar-brand">
                                             <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
-                                        </Link>
+                                    </Nav.Link>
                                     </Navbar.Brand>
                                     <Navbar.Toggle onClick={this.toggleNavbar} style={{padding:"0px"}} aria-controls="basic-navbar-nav" >
                                     <button className="navbar-toggler" type="button" aria-label="Toggle navigation">
