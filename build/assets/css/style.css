@@ -471,8 +471,11 @@ Header TopBar
   text-transform: capitalize;
   font-size: 17px;
   color: #000 !important;
+
   
 }
+
+
 
 .navbar-nav .nav-link-scrolled:hover {
   color: #29BFA9 !important;

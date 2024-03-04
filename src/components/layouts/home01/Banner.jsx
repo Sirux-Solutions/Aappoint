@@ -66,7 +66,7 @@ class Banner extends Component {
                                             <img src={scrolled ? "assets/images/logo-dark.png" : "assets/images/logo-light.png"} alt="aappoint_logo" className="img-fluid logo" />
                                     </Nav.Link>
                                     </Navbar.Brand>
-                                    <Navbar.Toggle onClick={this.toggleNavbar} style={{padding:"0px"}} aria-controls="basic-navbar-nav" >
+                                    <Navbar.Toggle onClick={this.toggleNavbar} style={{padding:"0px"}} aria-controls="basic-navbar-nav" className="ms-auto" >
                                     <button className="navbar-toggler" type="button" aria-label="Toggle navigation">
                                         <span className="fa fa-bars"></span>
                                     </button>                                    
