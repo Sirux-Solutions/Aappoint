@@ -68,7 +68,7 @@ class Banner extends Component {
                                     </Navbar.Brand>
                                     <Navbar.Toggle onClick={this.toggleNavbar} style={{
                                             position: 'absolute',
-                                            top: '25px', // Adjust as needed
+                                            top: '30px', // Adjust as needed
                                             right: '15px', // Adjust as needed
                                             padding: '0px',
                                             zIndex: '9999' // Ensure it's above other content
