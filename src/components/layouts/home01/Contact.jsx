@@ -13,6 +13,9 @@ class Contact extends Component {
             checked: false,
             radioValue: '1',
             subject: 'สอบถามรายละเอียด',
+            fullName: '', // Added state for full name
+            business: '', // Added state for business
+            message: '',  // Added state for message
         };
     }
 
@@ -27,6 +30,12 @@ class Contact extends Component {
                 console.log(result.text);
                 this.setState({ messageSent: true });
                 toast.success("Your message was sent successfully.");
+                // Clear input fields after successful submission
+                this.setState({
+                    fullName: '',
+                    business: '',
+                    message: ''
+                });
             }, (error) => {
                 console.log(error.text);
                 toast.error("Error sending message. Please try again later.");
@@ -54,8 +63,14 @@ class Contact extends Component {
         });
     };
 
+    handleInputChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    };
+
     render() {
-        const { radioValue, subject } = this.state;
+        const { radioValue, subject, fullName, business, message } = this.state;
 
         const radios = [
             { name: 'สอบถามรายละเอียด', value: '1' },
@@ -125,20 +140,45 @@ class Contact extends Component {
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <input type="text" id="fullName" name="fullName" className="form-control" placeholder="ชื่อ-นามสกุล"/>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <input type="text" name="business" id="business" className="form-control" placeholder="ประเภทธุรกิจ/ ชื่อสถานประกอบการ"/>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <textarea id="message" name="message" cols="30" rows="6" className="form-control" placeholder="ข้อมูลเพิ่มเติม, ระบุแพ็กเกจ"></textarea>    
-                                        </div>
-                                    </div>
+                                <div className="form-group">
+                                    <input 
+                                        type="text" 
+                                        id="fullName" 
+                                        name="fullName" 
+                                        className="form-control" 
+                                        placeholder="ชื่อ-นามสกุล"
+                                        value={fullName} 
+                                        onChange={this.handleInputChange} // Added onChange handler
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-12">
+                                <div className="form-group">
+                                    <input 
+                                        type="text" 
+                                        name="business" 
+                                        id="business" 
+                                        className="form-control" 
+                                        placeholder="ประเภทธุรกิจ/ ชื่อสถานประกอบการ"
+                                        value={business} 
+                                        onChange={this.handleInputChange} // Added onChange handler
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-12">
+                                <div className="form-group">
+                                    <textarea 
+                                        id="message" 
+                                        name="message" 
+                                        cols="30" 
+                                        rows="6" 
+                                        className="form-control" 
+                                        placeholder="ข้อมูลเพิ่มเติม, ระบุแพ็กเกจ"
+                                        value={message} 
+                                        onChange={this.handleInputChange} // Added onChange handler
+                                    ></textarea>    
+                                </div>
+                            </div>
                                     <div className="col-lg-12">
                                         <div className="d-lg-flex justify-content-end mt-4">
                                             <input id='subject' name='subject' type='text' value={subject} style={{ display: 'none' }} />
