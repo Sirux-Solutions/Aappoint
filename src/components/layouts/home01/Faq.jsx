@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import {Accordion} from 'react-bootstrap';
-
+import { Accordion } from 'react-bootstrap';
 
 class Faq extends Component {
-    render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            activeIndex: null
+        };
+    }
 
+    toggleAccordion(index) {
+        this.setState({ activeIndex: this.state.activeIndex === index ? null : index });
+    }
+
+    render() {
         const accordionData = [
             {
               title: 'Reserve with Google” คืออะไร?',
@@ -45,37 +53,40 @@ class Faq extends Component {
             },
           ];
 
-        return (
-                    
-        <section className="faq section-padding bg-grey pt-0" id="faq">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-lg-8">
-                        <div className="section-heading center-heading text-center mb-60">
-                            <h3 className="heading-title">คำถามพบบ่อย?</h3>
+          return (
+            <section className="faq section-padding bg-grey pt-0" id="faq">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8">
+                            <div className="section-heading center-heading text-center mb-60">
+                                <h3 className="heading-title">คำถามพบบ่อย?</h3>
+                            </div>
                         </div>
                     </div>
+
+                    <div className="row">
+                        {accordionData.map((item, index) => (
+                            <div className="col-lg-6" key={index}>
+                                <div className="panel-group">
+                                    <div
+                                        className="panel"
+                                        onClick={() => this.toggleAccordion(index)}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        <div className="panel-header">
+                                            <i className={`more-less fa ${this.state.activeIndex === index ? 'fa-minus' : 'fa-plus'}`}></i>
+                                            {item.title}
+                                        </div>
+                                        {this.state.activeIndex === index && (
+                                            <div className="panel-body">{item.content}</div>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-                <div className="row ">
-      {accordionData.map((item, index) => (
-        <div className="col-lg-6" key={index}>
-          <Accordion className="panel-group">
-            <Accordion.Item eventKey={index.toString()} className="panel-group">
-              <Accordion.Header>
-                <i className="more-less fa fa-plus"></i>{item.title}
-              </Accordion.Header>
-              <Accordion.Body className="panel-body">{item.content}</Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-      ))}
-      
-    
-    </div>
-            </div>
-        </section>
-
+            </section>
         );
     }
 }

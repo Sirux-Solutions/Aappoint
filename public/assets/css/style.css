@@ -2400,6 +2400,44 @@ Footer Section
   border-color:rgba(255,255,255,.08);
 }
 
+.panel {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.panel:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-header {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+}
+
+.panel-header i {
+  margin-right: 10px;
+}
+
+.panel-body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.more-less {
+  transition: transform 0.3s ease;
+}
+
+.panel.active .more-less {
+  transform: rotate(180deg);
+}
+
+
 /* Pricing */
 
 
