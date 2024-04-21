@@ -79,7 +79,7 @@ class Pricing extends Component {
 
                                         </div>
                                         <div className="price">
-                                            <h3>{data.currency}{data.price}</h3>
+                                            {/* <h3>{data.currency}{data.price}</h3> */}
                                             <p>{data.subtitle}</p>
                                         </div>
                                         <p>{data.text}</p>
