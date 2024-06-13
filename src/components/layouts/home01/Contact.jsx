@@ -16,6 +16,8 @@ class Contact extends Component {
             fullName: '', // Added state for full name
             business: '', // Added state for business
             message: '',  // Added state for message
+            phoneNumber: '', // Added state for phone number
+            email: '' // Added state for email
         };
     }
 
@@ -34,7 +36,9 @@ class Contact extends Component {
                 this.setState({
                     fullName: '',
                     business: '',
-                    message: ''
+                    message: '',
+                    phoneNumber: '', // Clear phone number
+                    email: '' // Clear email
                 });
             }, (error) => {
                 console.log(error.text);
@@ -70,7 +74,7 @@ class Contact extends Component {
     };
 
     render() {
-        const { radioValue, subject, fullName, business, message } = this.state;
+        const { radioValue, subject, fullName, business, message, phoneNumber, email } = this.state;
 
         const radios = [
             { name: 'สอบถามรายละเอียด', value: '1' },
@@ -140,45 +144,71 @@ class Contact extends Component {
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                <div className="form-group">
-                                    <input 
-                                        type="text" 
-                                        id="fullName" 
-                                        name="fullName" 
-                                        className="form-control" 
-                                        placeholder="ชื่อ-นามสกุล"
-                                        value={fullName} 
-                                        onChange={this.handleInputChange} // Added onChange handler
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="form-group">
-                                    <input 
-                                        type="text" 
-                                        name="business" 
-                                        id="business" 
-                                        className="form-control" 
-                                        placeholder="ประเภทธุรกิจ/ ชื่อสถานประกอบการ"
-                                        value={business} 
-                                        onChange={this.handleInputChange} // Added onChange handler
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="form-group">
-                                    <textarea 
-                                        id="message" 
-                                        name="message" 
-                                        cols="30" 
-                                        rows="6" 
-                                        className="form-control" 
-                                        placeholder="ข้อมูลเพิ่มเติม, ระบุแพ็กเกจ"
-                                        value={message} 
-                                        onChange={this.handleInputChange} // Added onChange handler
-                                    ></textarea>    
-                                </div>
-                            </div>
+                                        <div className="form-group">
+                                            <input 
+                                                type="text" 
+                                                id="fullName" 
+                                                name="fullName" 
+                                                className="form-control" 
+                                                placeholder="ชื่อ-นามสกุล"
+                                                value={fullName} 
+                                                onChange={this.handleInputChange} // Added onChange handler
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                            <input 
+                                                type="text" 
+                                                name="business" 
+                                                id="business" 
+                                                className="form-control" 
+                                                placeholder="ประเภทธุรกิจ/ ชื่อสถานประกอบการ"
+                                                value={business} 
+                                                onChange={this.handleInputChange} // Added onChange handler
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <div className="form-group">
+                                            <input 
+                                                type="text" 
+                                                name="phoneNumber" 
+                                                id="phoneNumber" 
+                                                className="form-control" 
+                                                placeholder="เบอร์โทรศัพท์"
+                                                value={phoneNumber} 
+                                                onChange={this.handleInputChange} // Added onChange handler
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <div className="form-group">
+                                            <input 
+                                                type="email" 
+                                                name="email" 
+                                                id="email" 
+                                                className="form-control" 
+                                                placeholder="อีเมลล์"
+                                                value={email} 
+                                                onChange={this.handleInputChange} // Added onChange handler
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                            <textarea 
+                                                id="message" 
+                                                name="message" 
+                                                cols="30" 
+                                                rows="6" 
+                                                className="form-control" 
+                                                placeholder="ข้อมูลเพิ่มเติม, ระบุแพ็กเกจ"
+                                                value={message} 
+                                                onChange={this.handleInputChange} // Added onChange handler
+                                            ></textarea>    
+                                        </div>
+                                    </div>
                                     <div className="col-lg-12">
                                         <div className="d-lg-flex justify-content-end mt-4">
                                             <input id='subject' name='subject' type='text' value={subject} style={{ display: 'none' }} />
