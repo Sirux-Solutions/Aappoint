@@ -102,7 +102,7 @@ class Contact extends Component {
                                     <li><h6> ที่อยู่: เลขที่ 25 อาคารอัลม่า ลิงค์ ชั้น 17 ห้อง 222 ซอยชิดลม </h6></li>
                                     <li><h6> ถนนเพลินจิต แขวงลุมพินี เขตปทุมวัน กรุงเทพ 10330</h6></li> 
                                     <li>เบอร์โทร : 064-425-5865</li>
-                                    <li>อีเมลล์ : customerservice@aappoint.me</li>
+                                    <li>อีเมล : customerservice@aappoint.me</li>
                                 </ul>
                             </div>
                         </div>                    
