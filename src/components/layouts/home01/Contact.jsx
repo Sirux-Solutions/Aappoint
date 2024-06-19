@@ -156,19 +156,6 @@ class Contact extends Component {
                                             />
                                         </div>
                                     </div>
-                                    <div className="col-lg-12">
-                                        <div className="form-group">
-                                            <input 
-                                                type="text" 
-                                                name="business" 
-                                                id="business" 
-                                                className="form-control" 
-                                                placeholder="ประเภทธุรกิจ/ ชื่อสถานประกอบการ"
-                                                value={business} 
-                                                onChange={this.handleInputChange} // Added onChange handler
-                                            />
-                                        </div>
-                                    </div>
                                     <div className="col-lg-6">
                                         <div className="form-group">
                                             <input 
@@ -189,12 +176,26 @@ class Contact extends Component {
                                                 name="email" 
                                                 id="email" 
                                                 className="form-control" 
-                                                placeholder="อีเมลล์"
+                                                placeholder="อีเมล"
                                                 value={email} 
                                                 onChange={this.handleInputChange} // Added onChange handler
                                             />
                                         </div>
                                     </div>
+                                    <div className="col-lg-12">
+                                        <div className="form-group">
+                                            <input 
+                                                type="text" 
+                                                name="business" 
+                                                id="business" 
+                                                className="form-control" 
+                                                placeholder="ประเภทธุรกิจ/ ชื่อสถานประกอบการ"
+                                                value={business} 
+                                                onChange={this.handleInputChange} // Added onChange handler
+                                            />
+                                        </div>
+                                    </div>
+                                    
                                     <div className="col-lg-12">
                                         <div className="form-group">
                                             <textarea 
